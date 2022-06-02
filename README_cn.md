@@ -5,7 +5,7 @@
 
 ---
 
-<p align="center">A simple record of the brush force buckle ...... according to the type and difficulty of the question, probably also as a record of technical growth ......</p>
+<p align="center">简单记录一下刷力扣的情况……根据题型和难度，大概也能作为技术成长的记录……</p>
 
 <div align="center">
 
@@ -34,10 +34,10 @@
 
 ## Features
 
-- [x] Using the latest jdk17 and spring3
-- [x] Currently may be based on time as subcontracting, later the number of more may be in accordance with the type of questions
-- [x] No advertising, welcome to the big guys hanging
-- [ ] ~~The rest of the content has not yet been thought of~~
+- [x] 使用最新的jdk17和spring3
+- [x] 目前可能按照时间作为分包依据，后面数量多了可能按照题型
+- [x] 没有广告，欢迎各位大佬吊打
+- [ ] ~~还没想好写什么~~
 
 ## Constructing tools
 
