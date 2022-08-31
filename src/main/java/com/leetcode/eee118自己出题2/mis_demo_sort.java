@@ -1,5 +1,6 @@
-package leetcode.eee118自己出题2;
+package com.leetcode.eee118自己出题2;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -7,7 +8,8 @@ public class mis_demo_sort {
     public static void main(String[] args) {
         // 获得两个随机数字，参与数组排序，并展示结果
         ArrayList<Integer> x = new ArrayList<>();
-        Random x1 = new Random();
+        // Random x = new Random();
+        SecureRandom x1 = new SecureRandom();
         int i = 0;
         while (i < 5) {
             int x2 = x1.nextInt(1000);

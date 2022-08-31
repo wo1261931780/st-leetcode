@@ -1,10 +1,12 @@
-package leetcode.eee118自己出题2;
+package com.leetcode.eee118自己出题2;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class demo_出题器 {
     public static void main(String[] args) {
-        Random x = new Random();
+        // Random x = new Random();
+        SecureRandom x = new SecureRandom();
         for (int i = 0; i < 3; i++) {
             int x1 = x.nextInt(44);
             System.out.println(x1);

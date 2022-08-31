@@ -1,5 +1,6 @@
-package leetcode.eee118机试题目;
+package com.leetcode.eee118机试题目;
 
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.TreeSet;
@@ -14,7 +15,8 @@ public class 抽样和排序 {
     */
 
     public static void main(String[] args) {
-        Random x = new Random();
+        // Random x = new Random();
+        SecureRandom x = new SecureRandom();
         Scanner xx = new Scanner(System.in);
         int xx1 = xx.nextInt();
         int i = 0;

@@ -1,5 +1,6 @@
 package com.leetcode.eee001history;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -29,8 +30,8 @@ public class ccc001demo {
         Scanner x_input = new Scanner(System.in);
         int demo = x_input.nextInt();
         int[] x = new int[demo];
-        Random x1 = new Random();
-
+        // Random x1 = new Random();
+        SecureRandom x1 = new SecureRandom();
         for (int i = 0; i < x.length; i++) {
             int demo_num = x1.nextInt(999) + 1;
             for (int i1 = 0; i1 < x.length; i1++) {
