@@ -1,4 +1,4 @@
-package leetcode.eee032统计字符串次数;
+package com.leetcode.eee032统计字符串次数;
 
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -69,12 +69,8 @@ public class 元素 {
                         element_map.put(String.valueOf(index_element), map_value);
                     }
                 }
-
             }
-
         }
-
         System.out.println(element_map);
-
     }
 }
