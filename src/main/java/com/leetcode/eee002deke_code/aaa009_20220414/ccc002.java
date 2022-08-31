@@ -91,7 +91,7 @@ public class ccc002 {
 
     public static boolean show(String substring, int substring2) {
         boolean x = false;
-        if (substring.equals("W") || substring.equals("A") || substring.equals("S") || substring.equals("D")) {
+        if ("W".equals(substring) || "A".equals(substring) || "S".equals(substring) || "D".equals(substring)) {
             x = true;
         }
         try {

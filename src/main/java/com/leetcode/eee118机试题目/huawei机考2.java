@@ -15,7 +15,7 @@ public class huawei机考2 {
         String x2 = Arrays.toString(x1.split(" "));
         System.out.println(x2);
         for (String i : x2.split("")) {
-            if (i.equals("0")) {
+            if ("0".equals(i)) {
 
             }
         }

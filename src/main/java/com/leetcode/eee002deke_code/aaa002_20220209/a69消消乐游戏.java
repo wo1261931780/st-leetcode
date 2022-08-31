@@ -50,7 +50,7 @@ public class a69消消乐游戏 {
         while (characters.size() != count) {
             count = characters.size();
             for (int i = 0; i < characters.size() - 1; i++) {
-                if (characters.get(i) == characters.get(i + 1)) {
+                if (characters.get(i).equals(characters.get(i + 1))) {
                     characters.remove(i);
                     characters.remove(i);
                     i--;

@@ -1,4 +1,4 @@
-package leetcode.eee001history;
+package com.leetcode.eee001history;
 
 import java.util.Scanner;
 
@@ -17,8 +17,9 @@ public class ccc006pr {
         }
     }
     public static void show(String x){
-        x.matches("\\w[a-z]");
-        x.matches("\\w[0-9]");
-        x.matches("\\w[A-Z]");
+        boolean matches = x.matches("\\w[a-z]");
+        boolean matches1 = x.matches("\\w[0-9]");
+        boolean matches2 = x.matches("\\w[A-Z]");
+        // sonarlint，必须设置返回值
     }
 }

@@ -92,7 +92,9 @@ public class a33内存资源分配 {
                     break;
                 }
             }
-            if (!flag) builder.append("false,");
+            if (!flag) {
+                builder.append("false,");
+            }
         }
 
         System.out.println(builder.substring(0, builder.length() - 1));

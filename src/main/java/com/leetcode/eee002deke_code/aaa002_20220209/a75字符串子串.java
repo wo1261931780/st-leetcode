@@ -63,7 +63,9 @@ public class a75字符串子串 {
                 len++;
                 index++;
             }
-            if (len > maxLen) maxLen = len;
+            if (len > maxLen) {
+                maxLen = len;
+            }
         }
 
         System.out.println(maxLen);

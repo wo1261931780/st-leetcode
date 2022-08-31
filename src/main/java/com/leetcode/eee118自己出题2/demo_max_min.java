@@ -1,4 +1,4 @@
-package leetcode.eee118自己出题2;
+package com.leetcode.eee118自己出题2;
 
 import java.util.Arrays;
 import java.util.Random;

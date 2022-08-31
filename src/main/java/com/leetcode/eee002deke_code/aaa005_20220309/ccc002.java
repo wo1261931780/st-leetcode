@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa005_20220309;
+package com.leetcode.eee002deke_code.aaa005_20220309;
 
 /**
  * Created by Intellij IDEA.

@@ -1,4 +1,4 @@
-package leetcode.eee001history;
+package com.leetcode.eee001history;
 
 import java.util.Scanner;
 

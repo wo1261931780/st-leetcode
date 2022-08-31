@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa002_20220209;
+package com.leetcode.eee002deke_code.aaa002_20220209;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -103,6 +103,8 @@ public class a52内存资源分配 {
                     break;
                 case "T":
                     sum += num * 1024 * 1024;
+                    break;
+                default:
                     break;
             }
         }

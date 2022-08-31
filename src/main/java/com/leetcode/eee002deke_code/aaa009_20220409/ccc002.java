@@ -90,7 +90,7 @@ public class ccc002 {
             // int pow_int = demo.equals("0") ? 0 : i;
             // double pow = Math.pow(2, pow_int);
             // 这里一开始就没搞懂二进制的运算原理
-            double pow = demo.equals("0") ? 0 : Math.pow(2, i);
+            double pow = "0".equals(demo) ? 0 : Math.pow(2, i);
             result2 += pow;
         }
         System.out.println(result2);

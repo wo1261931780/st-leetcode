@@ -59,8 +59,11 @@ public class a56传输时延 {
         int time = 0;
         int more = 0;
         for (int i : ints) {
-            if (i + more > n) more = i + more - n;
-            else more = 0;
+            if (i + more > n) {
+                more = i + more - n;
+            } else {
+                more = 0;
+            }
             time++;
         }
         while (more > 0) {
