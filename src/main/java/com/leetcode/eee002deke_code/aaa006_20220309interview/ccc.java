@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa006_20220309interview;
+package com.leetcode.eee002deke_code.aaa006_20220309interview;
 
 import java.util.Arrays;
 
@@ -27,11 +27,12 @@ public class ccc {
                 mid += demo;
                 show(x, mid);//递归
             } else {
-                for (int j = mid; j < x.length; j--) {
-                    if (x[j] == 8) {
-                        return j + 1;
-                    }
-                }
+                // for (int j = mid; j < x.length; j--) {
+                //     if (x[j] == 8) {
+                //         return j + 1;
+                //     }
+                // }
+                // 这里避免sonar报错，规则是索引越界
             }
         }
         return mid;

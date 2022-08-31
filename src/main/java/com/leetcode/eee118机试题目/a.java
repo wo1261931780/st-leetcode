@@ -1,4 +1,4 @@
-package leetcode.eee118机试题目;
+package com.leetcode.eee118机试题目;
 
 public class a {
     String str = "good";
@@ -13,7 +13,7 @@ public class a {
     }
 
     public static void exchange(String str, char[] ch) {
-        str = "test ok";
+        String newStr = "test ok";
         ch[0] = 'g';
     }
 }
