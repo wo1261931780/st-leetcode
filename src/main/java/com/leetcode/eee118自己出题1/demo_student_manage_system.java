@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class demo_student_manage_system {
-	private static final String stCode = "请输入学号：";
+	private static final String ST_CODE = "请输入学号：";
 
 	public static void main(String[] args) {
 		ArrayList<leetcode.eee118自己出题1.demo_student_obj> xx = new ArrayList<>();
@@ -59,7 +59,7 @@ public class demo_student_manage_system {
 	public static void add_student(ArrayList<leetcode.eee118自己出题1.demo_student_obj> xx) {
 		Scanner x1 = new Scanner(System.in);
 		Scanner xx1 = new Scanner(System.in);
-		System.out.println(stCode);
+		System.out.println(ST_CODE);
 		int num = x1.nextInt();
 		// String num=x1.nextLine();
 		System.out.println("请输入姓名：");
@@ -75,7 +75,7 @@ public class demo_student_manage_system {
 
 	public static void remove_student(ArrayList<leetcode.eee118自己出题1.demo_student_obj> xx) {
 		Scanner x = new Scanner(System.in);
-		System.out.println(stCode);
+		System.out.println(ST_CODE);
 		int x1 = x.nextInt();
 		for (leetcode.eee118自己出题1.demo_student_obj x2 : xx) {
 			if (x1 == x2.getNumber()) {
@@ -89,7 +89,7 @@ public class demo_student_manage_system {
 	public static void change_student(ArrayList<leetcode.eee118自己出题1.demo_student_obj> xx) {
 		Scanner x = new Scanner(System.in);
 		Scanner xx1 = new Scanner(System.in);
-		System.out.println(stCode);
+		System.out.println(ST_CODE);
 		int x1 = x.nextInt();
 		for (leetcode.eee118自己出题1.demo_student_obj x2 : xx) {
 			if (x1 == x2.getNumber()) {
