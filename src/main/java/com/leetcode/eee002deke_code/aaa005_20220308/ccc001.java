@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa005_20220308;
+package com.leetcode.eee002deke_code.aaa005_20220308;
 
 import java.util.Arrays;
 
@@ -10,12 +10,12 @@ import java.util.Arrays;
  * Time:  2022-03-17-32  星期二
  */
 public class ccc001 {
-    public static void main(String[] args) {
-        int[] x=new int[6];
-        int[] x1={1,1,1,2,1,3,1,4};
-        System.arraycopy(x1,2,x,3,2);
-        //----------目标数组，起始位，粘贴到x数组，粘贴索引3，复制长度2
-        System.out.println(Arrays.toString(x));//注意这里有s，是Arrays
-        // x结果：[0, 0, 0, 1, 2, 0]
-    }
+	public static void main(String[] args) {
+		int[] x = new int[6];
+		int[] x1 = {1, 1, 1, 2, 1, 3, 1, 4};
+		System.arraycopy(x1, 2, x, 3, 2);
+		//----------目标数组，起始位，粘贴到x数组，粘贴索引3，复制长度2
+		System.out.println(Arrays.toString(x));// 注意这里有s，是Arrays
+		// x结果：[0, 0, 0, 1, 2, 0]
+	}
 }

@@ -1,10 +1,10 @@
-package leetcode.eee002deke_code.aaa002_20220209;
+package com.leetcode.eee002deke_code.aaa002_20220209;
 
 import java.util.Scanner;
 
 
 public class a56传输时延 {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         /*
          为了充分发挥Gpu算力，
          需要尽可能多的将任务交给GPU执行，
@@ -47,31 +47,31 @@ public class a56传输时延 {
            说明，一次最多执行4个任务  最少耗时5s
          */
 
-        Scanner in = new Scanner(System.in);
-        int n = Integer.parseInt(in.nextLine().trim());
-        int len = Integer.parseInt(in.nextLine().trim());
-        String[] split = in.nextLine().split(" ");
-        int[] ints = new int[len];
-        for (int i = 0; i < len; i++) {
-            ints[i] = Integer.parseInt(split[i]);
-        }
+		Scanner in = new Scanner(System.in);
+		int n = Integer.parseInt(in.nextLine().trim());
+		int len = Integer.parseInt(in.nextLine().trim());
+		String[] split = in.nextLine().split(" ");
+		int[] ints = new int[len];
+		for (int i = 0; i < len; i++) {
+			ints[i] = Integer.parseInt(split[i]);
+		}
 
-        int time = 0;
-        int more = 0;
-        for (int i : ints) {
-            if (i + more > n) {
-                more = i + more - n;
-            } else {
-                more = 0;
-            }
-            time++;
-        }
-        while (more > 0) {
-            more -= n;
-            time++;
-        }
+		int time = 0;
+		int more = 0;
+		for (int i : ints) {
+			if (i + more > n) {
+				more = i + more - n;
+			} else {
+				more = 0;
+			}
+			time++;
+		}
+		while (more > 0) {
+			more -= n;
+			time++;
+		}
 
-        System.out.println(time);
-        in.close();
-    }
+		System.out.println(time);
+		in.close();
+	}
 }

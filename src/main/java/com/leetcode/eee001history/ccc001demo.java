@@ -52,8 +52,8 @@ public class ccc001demo {
 				}
 			}
 		}
-		for (int i = 0; i < x.length; i++) {
-			System.out.println(x[i]);
+		for (int j : x) {
+			System.out.println(j);
 		}
 	}
 }

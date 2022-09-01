@@ -52,8 +52,7 @@ public class demo_student_manage_system {
 		System.out.println("4.查看所有学生");
 		System.out.println("5.退出");
 		System.out.println("请输入你的选择：");
-		int x1 = x.nextInt();
-		return x1;
+		return x.nextInt();
 	}
 
 	public static void add_student(ArrayList<leetcode.eee118自己出题1.demo_student_obj> xx) {

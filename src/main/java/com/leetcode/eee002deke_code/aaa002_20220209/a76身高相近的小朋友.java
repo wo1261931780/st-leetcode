@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa002_20220209;
+package com.leetcode.eee002deke_code.aaa002_20220209;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -66,39 +66,38 @@ public class a76身高相近的小朋友 {
 
    */
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = Integer.parseInt(in.nextLine());
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = Integer.parseInt(in.nextLine());
 
-        if (n == 0) {
-            System.out.println(0);
-            return;
-        }
-        String[] strs = in.nextLine().split(" ");
+		if (n == 0) {
+			System.out.println(0);
+			return;
+		}
+		String[] strs = in.nextLine().split(" ");
 
-        List<Integer> height = Arrays.stream(strs)
-                .map(Integer::parseInt)
-                .collect(Collectors.toList());
+		List<Integer> height = Arrays.stream(strs)
+				                       .map(Integer::parseInt).toList();
 
-        LinkedList<Integer> res = new LinkedList<>();
+		LinkedList<Integer> res = new LinkedList<>();
 
-        for (int i = 0; i < height.size(); i++) {
-            int pos = 0;
-            for (int j = i + 1; j < height.size(); j++) {
-                if (height.get(j) > height.get(i)) {
-                    pos = j;
-                    break;
-                }
-            }
-            res.add(pos);
-        }
+		for (int i = 0; i < height.size(); i++) {
+			int pos = 0;
+			for (int j = i + 1; j < height.size(); j++) {
+				if (height.get(j) > height.get(i)) {
+					pos = j;
+					break;
+				}
+			}
+			res.add(pos);
+		}
 
-        StringBuilder builder = new StringBuilder();
-        res.forEach(x -> builder.append(x).append(" "));
-        if (builder.length() > 1) {
-            String substring = builder.substring(0, builder.length() - 1);
-            System.out.println(substring);
-        }
+		StringBuilder builder = new StringBuilder();
+		res.forEach(x -> builder.append(x).append(" "));
+		if (builder.length() > 1) {
+			String substring = builder.substring(0, builder.length() - 1);
+			System.out.println(substring);
+		}
 
-    }
+	}
 }

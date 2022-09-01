@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa002_20220209;
+package com.leetcode.eee002deke_code.aaa002_20220209;
 
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ import java.util.Scanner;
  * Description:100%
  */
 public class a69消消乐游戏 {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         /*
         游戏规则：输入一个只包含英文字母的字符串，
         字符串中的俩个字母如果相邻且相同，就可以消除。
@@ -29,36 +29,36 @@ public class a69消消乐游戏 {
         事例：mMbccbc输出为3
          */
 
-        Scanner in = new Scanner(System.in);
-        String str = in.nextLine();
-        in.close();
+		Scanner in = new Scanner(System.in);
+		String str = in.nextLine();
+		in.close();
 
-        int len = str.replaceAll("[A-Z]", "")
-                .replaceAll("[a-z]", "")
-                .length();
-        if (len != 0) {
-            System.out.println(0);
-            return;
-        }
+		int len = str.replaceAll("[A-Z]", "")
+				          .replaceAll("[a-z]", "")
+				          .length();
+		if (len != 0) {
+			System.out.println(0);
+			return;
+		}
 
-        LinkedList<Character> characters = new LinkedList<>();
-        for (char c : str.toCharArray()) {
-            characters.add(c);
-        }
+		LinkedList<Character> characters = new LinkedList<>();
+		for (char c : str.toCharArray()) {
+			characters.add(c);
+		}
 
-        int count = 0;
-        while (characters.size() != count) {
-            count = characters.size();
-            for (int i = 0; i < characters.size() - 1; i++) {
-                if (characters.get(i).equals(characters.get(i + 1))) {
-                    characters.remove(i);
-                    characters.remove(i);
-                    i--;
-                }
-            }
-        }
+		int count = 0;
+		while (characters.size() != count) {
+			count = characters.size();
+			for (int i = 0; i < characters.size() - 1; i++) {
+				if (characters.get(i).equals(characters.get(i + 1))) {
+					characters.remove(i);
+					characters.remove(i);
+					i--;
+				}
+			}
+		}
 
-        System.out.println(characters.size());
+		System.out.println(characters.size());
 
-    }
+	}
 }

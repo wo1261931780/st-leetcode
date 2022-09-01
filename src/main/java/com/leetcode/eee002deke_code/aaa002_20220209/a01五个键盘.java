@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa002_20220209;
+package com.leetcode.eee002deke_code.aaa002_20220209;
 
 import java.util.Scanner;
 
@@ -44,60 +44,60 @@ public class a01五个键盘 {
 
      */
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String ops = in.nextLine();
-        in.close();
-        String[] list = ops.split(" ");
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String ops = in.nextLine();
+		in.close();
+		String[] list = ops.split(" ");
 
-        StringBuilder builder = new StringBuilder();
+		StringBuilder builder = new StringBuilder();
 
-        String choose = "";
-        String tab = "";
+		String choose = "";
+		String tab = "";
 
-        for (String op : list) {
-            switch (op) {
-                case "1":
-                    choose = reset(builder, choose);
-                    builder.append('A');
-                    break;
-                case "2":
-                    if (!choose.isEmpty()) {
-                        tab = choose;
-                    }
-                    break;
-                case "3":
-                    if (!choose.isEmpty()) {
-                        tab = choose;
-                        choose = "";
-                        builder = new StringBuilder();
-                    }
-                    break;
-                case "4":
-                    choose = reset(builder, choose);
-                    builder.append(tab);
-                    break;
-                case "5":
-                    if (builder.length() != 0) {
-                        choose = builder.toString();
-                    }
-                    break;
-                default:
-                    break;
-            }
+		for (String op : list) {
+			switch (op) {
+				case "1":
+					choose = reset(builder, choose);
+					builder.append('A');
+					break;
+				case "2":
+					if (!choose.isEmpty()) {
+						tab = choose;
+					}
+					break;
+				case "3":
+					if (!choose.isEmpty()) {
+						tab = choose;
+						choose = "";
+						builder = new StringBuilder();
+					}
+					break;
+				case "4":
+					choose = reset(builder, choose);
+					builder.append(tab);
+					break;
+				case "5":
+					if (builder.length() != 0) {
+						choose = builder.toString();
+					}
+					break;
+				default:
+					break;
+			}
 
-            System.out.println(builder);
-            System.out.println(builder.length());
-        }
+			System.out.println(builder);
+			System.out.println(builder.length());
+		}
 
-        System.out.println(builder.length());
-    }
+		System.out.println(builder.length());
+	}
 
-    private static String reset(StringBuilder builder, String choose) {
-        if (!choose.isEmpty()) {
-            builder.replace(0, choose.length(), "");
-            choose = "";
-        }
-        return choose;
-    }
+	private static String reset(StringBuilder builder, String choose) {
+		if (!choose.isEmpty()) {
+			builder.replace(0, choose.length(), "");
+			choose = "";
+		}
+		return choose;
+	}
 }

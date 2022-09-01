@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa002_20220209;
+package com.leetcode.eee002deke_code.aaa002_20220209;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -14,7 +14,7 @@ import java.util.Scanner;
  * Description:
  */
 public class a031连续自然数之和 {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         /*
         一个整数可以由连续的自然数之和来表示
         给定一个整数
@@ -54,28 +54,28 @@ public class a031连续自然数之和 {
 
          */
 
-        Scanner in = new Scanner(System.in);
-        int t = Integer.parseInt(in.nextLine());
-        System.out.println(t + "=" + t);
+		Scanner in = new Scanner(System.in);
+		int t = Integer.parseInt(in.nextLine());
+		System.out.println(t + "=" + t);
 
-        ArrayList<String> res = new ArrayList<>();
+		ArrayList<String> res = new ArrayList<>();
 
-        for (int n = 1; n < t; n++) {
-            int sum = 0;
-            StringBuilder builder = new StringBuilder();
-            for (int i = n; sum < t; i++) {
-                sum += i;
-                builder.append(i).append("+");
-                if (sum == t) {
-                    res.add(t + "=" + builder.substring(0, builder.length() - 1));
-                    break;
-                }
-            }
-        }
-        res.sort(Comparator.comparingInt(String::length));
-        res.forEach(System.out::println);
+		for (int n = 1; n < t; n++) {
+			int sum = 0;
+			StringBuilder builder = new StringBuilder();
+			for (int i = n; sum < t; i++) {
+				sum += i;
+				builder.append(i).append("+");
+				if (sum == t) {
+					res.add(t + "=" + builder.substring(0, builder.length() - 1));
+					break;
+				}
+			}
+		}
+		res.sort(Comparator.comparingInt(String::length));
+		res.forEach(System.out::println);
 
-        System.out.println("Result:" + (res.size() + 1));
-        in.close();
-    }
+		System.out.println("Result:" + (res.size() + 1));
+		in.close();
+	}
 }

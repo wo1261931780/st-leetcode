@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa002_20220209;
+package com.leetcode.eee002deke_code.aaa002_20220209;
 
 import java.util.Scanner;
 
@@ -47,29 +47,29 @@ public class a75字符串子串 {
     字符串区分大小写
    */
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String str = in.nextLine();
-        in.close();
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String str = in.nextLine();
+		in.close();
 
-        char[] chars = str.toCharArray();
+		char[] chars = str.toCharArray();
 
-        int maxLen = 0;
+		int maxLen = 0;
 
-        for (int i = 0; i < chars.length; i++) {
-            int index = i;
-            int len = 1;
-            while (index + 1 < chars.length && chars[index + 1] == chars[index]) {
-                len++;
-                index++;
-            }
-            if (len > maxLen) {
-                maxLen = len;
-            }
-        }
+		for (int i = 0; i < chars.length; i++) {
+			int index = i;
+			int len = 1;
+			while (index + 1 < chars.length && chars[index + 1] == chars[index]) {
+				len++;
+				index++;
+			}
+			if (len > maxLen) {
+				maxLen = len;
+			}
+		}
 
-        System.out.println(maxLen);
+		System.out.println(maxLen);
 
-    }
+	}
 
 }

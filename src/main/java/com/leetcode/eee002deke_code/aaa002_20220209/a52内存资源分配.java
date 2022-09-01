@@ -66,49 +66,38 @@ public class a52内存资源分配 {
 
      */
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int N = Integer.parseInt(in.nextLine());
-        ArrayList<String> sizes = new ArrayList<>();
-        for (int i = 0; i < N; i++) {
-            sizes.add(in.nextLine());
-        }
-        in.close();
-        sizes.sort(new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                return Long.compare(parseLong(o1), parseLong(o2));
-            }
-        });
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int N = Integer.parseInt(in.nextLine());
+		ArrayList<String> sizes = new ArrayList<>();
+		for (int i = 0; i < N; i++) {
+			sizes.add(in.nextLine());
+		}
+		in.close();
+		sizes.sort((o1, o2) -> Long.compare(parseLong(o1), parseLong(o2)));
 
-        sizes.forEach(System.out::println);
+		sizes.forEach(System.out::println);
 
-    }
+	}
 
-    static Long parseLong(String size) {
-        String[] units = size.split("[0-9]+");
-        String[] nums = size.split("[A-Z]+");
-        //[, M, G, M]
-        //[3, 12, 9]
+	static Long parseLong(String size) {
+		String[] units = size.split("[0-9]+");
+		String[] nums = size.split("[A-Z]+");
+		//[, M, G, M]
+		//[3, 12, 9]
 
-        long sum = 0;
-        for (int i = 1; i < units.length; i++) {
-            long num = Long.parseLong(nums[i - 1]);
-            switch (units[i]) {
-                case "M":
-                    sum += num;
-                    break;
-                case "G":
-                    sum += num * 1024;
-                    break;
-                case "T":
-                    sum += num * 1024 * 1024;
-                    break;
-                default:
-                    break;
-            }
-        }
+		long sum = 0;
+		for (int i = 1; i < units.length; i++) {
+			long num = Long.parseLong(nums[i - 1]);
+			switch (units[i]) {
+				case "M" -> sum += num;
+				case "G" -> sum += num * 1024;
+				case "T" -> sum += num * 1024 * 1024;
+				default -> {
+				}
+			}
+		}
 
-        return sum;
-    }
+		return sum;
+	}
 }

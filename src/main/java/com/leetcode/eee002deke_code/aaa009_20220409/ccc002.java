@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa009_20220409;
+package com.leetcode.eee002deke_code.aaa009_20220409;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,85 +17,89 @@ import java.util.Scanner;
  * ?1
  */
 public class ccc002 {
-    public static Map<String, String> xx = new HashMap<>();
+	public static final Map<String, String> xx = new HashMap<>();
 
-    static {
-        xx.put("0", "0");
-        xx.put("1", "1");
-        xx.put("2", "2");
-        xx.put("3", "3");
-        xx.put("4", "4");
-        xx.put("5", "5");
-        xx.put("6", "6");
-        xx.put("7", "7");
-        xx.put("8", "8");
-        xx.put("9", "9");
-        xx.put("A", "10");
-        xx.put("B", "11");
-        xx.put("C", "12");
-        xx.put("D", "13");
-        xx.put("E", "14");
-        xx.put("F", "15");
-    }
+	static {
+		xx.put("0", "0");
+		xx.put("1", "1");
+		xx.put("2", "2");
+		xx.put("3", "3");
+		xx.put("4", "4");
+		xx.put("5", "5");
+		xx.put("6", "6");
+		xx.put("7", "7");
+		xx.put("8", "8");
+		xx.put("9", "9");
+		xx.put("A", "10");
+		xx.put("B", "11");
+		xx.put("C", "12");
+		xx.put("D", "13");
+		xx.put("E", "14");
+		xx.put("F", "15");
+	}
 
-    public static void main(String[] args) {
-        Scanner x = new Scanner(System.in);
-        String demo_num = x.nextLine();
-        String res = "";
-        for (int i = 2; i < demo_num.length(); i++) {
-            String demo_str = String.valueOf(demo_num.charAt(i));
-            res += trans(demo_str, xx);
-        }
-        trans3(res);
-        System.out.println(res);
-    }
+	public static void main(String[] args) {
+		Scanner x = new Scanner(System.in);
+		String demo_num = x.nextLine();
+		StringBuilder resBuilder = new StringBuilder();
+		for (int i = 2; i < demo_num.length(); i++) {
+			String demo_str = String.valueOf(demo_num.charAt(i));
+			resBuilder.append(trans(demo_str, xx));
+		}
+		String res = resBuilder.toString();
+		trans3(res);
+		System.out.println(res);
+	}
 
-    public static String trans(String demo, Map<String, String> x) {
-        // Set<Map.Entry<String, String>> show = x.entrySet();
-        for (String s : x.keySet()) {
-            if (x.get(s).equals(demo) || s.equals(demo)) {
-                return trans2(x.get(s));
-            }
-        }
-        return "";
-    }
+	public static String trans(String demo, Map<String, String> x) {
+		// Set<Map.Entry<String, String>> show = x.entrySet();
+		for (String s : x.keySet()) {
+			if (x.get(s).equals(demo) || s.equals(demo)) {
+				return trans2(x.get(s));
+			}
+		}
+		return "";
+	}
 
-    public static String trans2(String num) {
-        // int total_lenth = num.length();
-        String result = "";
-        String result2 = "";
+	public static void trans3(String result) {
+		int result2 = 0;
+		for (int i = 0, j = result.length() - 1; i < result.length(); i++, j--) {
+			String demo = String.valueOf(result.charAt(j));
+			// int pow_int = demo.equals("0") ? 0 : i;
+			// double pow = Math.pow(2, pow_int);
+			// 这里一开始就没搞懂二进制的运算原理
+			double pow = "0".equals(demo) ? 0 : Math.pow(2, i);
+			result2 += pow;
+		}
+		System.out.println(result2);
+	}
 
-        Integer input = Integer.valueOf(num);
-        while (input >= 1) {
-            // if (Integer.valueOf(num) % 2 == 0) {
-            //     result += input % 2 == 0 ? "1" : "0";
-            // } else {
-            //     result += input % 2 == 0 ? "0" : "1";
-            // }
-            result2 = input % 2 == 0 ? "0" : "1";
-            result = result2 + result;
-            input /= 2;
-        }
-        while (result.length() < 4) {
-            result = "0" + result;
-        }
-        return result;
-        // System.out.println(result);
-    }
+	public static String trans2(String num) {
+		// int total_lenth = num.length();
+		String result;
+		String result2 = "";
 
-    public static int trans3(String result) {
-        int result2 = 0;
-        for (int i = 0, j = result.length() - 1; i < result.length(); i++, j--) {
-            String demo = String.valueOf(result.charAt(j));
-            // int pow_int = demo.equals("0") ? 0 : i;
-            // double pow = Math.pow(2, pow_int);
-            // 这里一开始就没搞懂二进制的运算原理
-            double pow = "0".equals(demo) ? 0 : Math.pow(2, i);
-            result2 += pow;
-        }
-        System.out.println(result2);
-        return result2;
-    }
+		Integer input = Integer.valueOf(num);
+		StringBuilder resultBuilder1 = new StringBuilder();
+		while (input >= 1) {
+			// if (Integer.valueOf(num) % 2 == 0) {
+			//     result += input % 2 == 0 ? "1" : "0";
+			// } else {
+			//     result += input % 2 == 0 ? "0" : "1";
+			// }
+			result2 = input % 2 == 0 ? "0" : "1";
+			resultBuilder1.insert(0, result2);
+			input /= 2;
+		}
+		result = resultBuilder1.toString();
+		StringBuilder resultBuilder = new StringBuilder(result);
+		while (resultBuilder.length() < 4) {
+			resultBuilder.insert(0, "0");
+		}
+		result = resultBuilder.toString();
+		return result;
+		// System.out.println(result);
+	}
 }
 // 0-1-2-3-4-5-6-7
 // 0-1-0-1-0-1-0-1

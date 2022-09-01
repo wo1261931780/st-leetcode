@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa009_20220413;
+package com.leetcode.eee002deke_code.aaa009_20220413;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,15 +15,15 @@ import java.util.Set;
  * 例如，对于字符串 abaca 而言，有 a、b、c 三种不同的字符，因此输出 3 。
  */
 public class ccc002 {
-    public static void main(String[] args) {
-        Scanner x = new Scanner(System.in);
-        String demo = x.nextLine();
-        Map<Character, Integer> map = new HashMap<>();
-        for (int i = 0; i < demo.length(); i++) {
-            char str = demo.charAt(i);
-            map.put(str, 1);
-        }
-        Set<Character> demo2 = map.keySet();
-        System.out.println(demo2.size());
-    }
+	public static void main(String[] args) {
+		Scanner x = new Scanner(System.in);
+		String demo = x.nextLine();
+		Map<Character, Integer> map = new HashMap<>();
+		for (int i = 0; i < demo.length(); i++) {
+			char str = demo.charAt(i);
+			map.put(str, 1);
+		}
+		Set<Character> demo2 = map.keySet();
+		System.out.println(demo2.size());
+	}
 }

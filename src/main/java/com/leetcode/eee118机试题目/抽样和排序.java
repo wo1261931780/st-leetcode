@@ -1,7 +1,6 @@
 package com.leetcode.eee118机试题目;
 
 import java.security.SecureRandom;
-import java.util.Random;
 import java.util.Scanner;
 import java.util.TreeSet;
 
@@ -14,24 +13,24 @@ public class 抽样和排序 {
 当没有新的输入时，说明输入结束。
     */
 
-    public static void main(String[] args) {
-        // Random x = new Random();
-        SecureRandom x = new SecureRandom();
-        Scanner xx = new Scanner(System.in);
-        int xx1 = xx.nextInt();
-        int i = 0;
-        TreeSet x2 = new TreeSet<>();
-        while (i < xx1) {
-            int x1 = x.nextInt(1000) + 1;
-            System.out.println(x1);
-            x2.add(x1);
-            i++;
-        }
-        System.out.println("-----");
-        for (Object i1 : x2) {
-            System.out.println(i1);
-        }
+	public static void main(String[] args) {
+		// Random x = new Random();
+		SecureRandom x = new SecureRandom();
+		Scanner xx = new Scanner(System.in);
+		int xx1 = xx.nextInt();
+		int i = 0;
+		TreeSet<Object> x2 = new TreeSet<>();
+		while (i < xx1) {
+			int x1 = x.nextInt(1000) + 1;
+			System.out.println(x1);
+			x2.add(x1);
+			i++;
+		}
+		System.out.println("-----");
+		for (Object i1 : x2) {
+			System.out.println(i1);
+		}
 
 
-    }
+	}
 }

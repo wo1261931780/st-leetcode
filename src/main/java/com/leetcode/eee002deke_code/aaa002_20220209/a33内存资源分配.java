@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa002_20220209;
+package com.leetcode.eee002deke_code.aaa002_20220209;
 
 import java.util.Arrays;
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * Description:
  */
 public class a33内存资源分配 {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         /*
           有一个简易内存池，内存按照大小粒度分类
           每个粒度有若干个可用内存资源
@@ -66,37 +66,36 @@ public class a33内存资源分配 {
           第三次申请内存时已经将128分配出去，因此输出的结果是
           true,true,true,false,false
          */
-        Scanner in = new Scanner(System.in);
-        TreeMap<Integer, Integer> pool = new TreeMap<>();
-        Arrays.stream(in.nextLine().split(","))
-                .forEach(x -> {
-                    String[] split = x.split(":");
-                    pool.put(Integer.parseInt(split[0]),
-                            Integer.parseInt(split[1]));
-                });
-        List<Integer> list = Arrays.stream(in.nextLine().split(","))
-                .map(Integer::parseInt)
-                .collect(Collectors.toList());
-        in.close();
+		Scanner in = new Scanner(System.in);
+		TreeMap<Integer, Integer> pool = new TreeMap<>();
+		Arrays.stream(in.nextLine().split(","))
+				.forEach(x -> {
+					String[] split = x.split(":");
+					pool.put(Integer.parseInt(split[0]),
+							Integer.parseInt(split[1]));
+				});
+		List<Integer> list = Arrays.stream(in.nextLine().split(","))
+				                     .map(Integer::parseInt).toList();
+		in.close();
 
-        StringBuilder builder = new StringBuilder();
+		StringBuilder builder = new StringBuilder();
 
-        for (Integer size : list) {
-            boolean flag = false;
-            for (Integer k : pool.keySet()) {
-                Integer v = pool.get(k);
-                if (k >= size && v != 0) {
-                    builder.append("true,");
-                    pool.put(k, v - 1);
-                    flag = true;
-                    break;
-                }
-            }
-            if (!flag) {
-                builder.append("false,");
-            }
-        }
+		for (Integer size : list) {
+			boolean flag = false;
+			for (Integer k : pool.keySet()) {
+				Integer v = pool.get(k);
+				if (k >= size && v != 0) {
+					builder.append("true,");
+					pool.put(k, v - 1);
+					flag = true;
+					break;
+				}
+			}
+			if (!flag) {
+				builder.append("false,");
+			}
+		}
 
-        System.out.println(builder.substring(0, builder.length() - 1));
-    }
+		System.out.println(builder.substring(0, builder.length() - 1));
+	}
 }

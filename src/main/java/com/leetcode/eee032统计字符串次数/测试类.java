@@ -1,4 +1,4 @@
-package leetcode.eee032统计字符串次数;
+package com.leetcode.eee032统计字符串次数;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -19,27 +19,27 @@ import java.util.Set;
  * 6:输出结果
  */
 public class 测试类 {
-    public static void main(String[] args) {
-        Scanner x = new Scanner(System.in);
-        System.out.println("开始");
-        String x1 = x.nextLine();
-        HashMap<Character, Integer> x2 = new HashMap<>();
-        for (int i = 0; i < x1.length(); i++) {
-            Character x3 = x1.charAt(i);
-            Integer x4 = x2.get(x3);
-            if (x4 == null) {
-                x2.put(x3, 1);
-            } else {
-                x4++;
-                x2.put(x3, x4);
-            }
-        }
-        System.out.println(x2);
-        StringBuilder x6 = new StringBuilder();
-        Set<Character> x5 = x2.keySet();
-        for (Character x7 : x5) {
-            x6.append(x7).append("(").append(x2.get(x7)).append(")").append("-");
-        }
-        System.out.println(x6);
-    }
+	public static void main(String[] args) {
+		Scanner x = new Scanner(System.in);
+		System.out.println("开始");
+		String x1 = x.nextLine();
+		HashMap<Character, Integer> x2 = new HashMap<>();
+		for (int i = 0; i < x1.length(); i++) {
+			Character x3 = x1.charAt(i);
+			Integer x4 = x2.get(x3);
+			if (x4 == null) {
+				x2.put(x3, 1);
+			} else {
+				x4++;
+				x2.put(x3, x4);
+			}
+		}
+		System.out.println(x2);
+		StringBuilder x6 = new StringBuilder();
+		Set<Character> x5 = x2.keySet();
+		for (Character x7 : x5) {
+			x6.append(x7).append("(").append(x2.get(x7)).append(")").append("-");
+		}
+		System.out.println(x6);
+	}
 }

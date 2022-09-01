@@ -1,4 +1,4 @@
-package leetcode.eee002deke_code.aaa009_20220411;
+package com.leetcode.eee002deke_code.aaa009_20220411;
 
 import java.util.*;
 
@@ -32,52 +32,47 @@ import java.util.*;
  * 3 4
  */
 public class demorun {
-    public static void main(String[] args) {
-        Map<Integer, Integer> map = new HashMap<>();
+	public static void main(String[] args) {
+		Map<Integer, Integer> map = new HashMap<>();
 
-        Scanner x = new Scanner(System.in);
-        String ori_str = x.nextLine();
-        int second = Integer.parseInt(ori_str);
+		Scanner x = new Scanner(System.in);
+		String ori_str = x.nextLine();
+		int second = Integer.parseInt(ori_str);
 
-        for (int i = 0; i < second; i++) {
-            String demo_str = x.nextLine();
-            // int str1 = Integer.parseInt(demo_str.substring(0, 1));
-            // int str2 = Integer.parseInt(demo_str.substring(2, 3));
-            String[] str_list = demo_str.split(" ");
-            int str1 = Integer.parseInt(str_list[0]);
-            int str2 = Integer.parseInt(str_list[1]);
-            show(map, str1, str2);
-            // System.out.println(str1);
-        }
-        show2(map);
+		for (int i = 0; i < second; i++) {
+			String demo_str = x.nextLine();
+			// int str1 = Integer.parseInt(demo_str.substring(0, 1));
+			// int str2 = Integer.parseInt(demo_str.substring(2, 3));
+			String[] str_list = demo_str.split(" ");
+			int str1 = Integer.parseInt(str_list[0]);
+			int str2 = Integer.parseInt(str_list[1]);
+			show(map, str1, str2);
+			// System.out.println(str1);
+		}
+		show2(map);
 
 
-    }
+	}
 
-    public static void show(Map<Integer, Integer> x, int str1, int str2) {
-        // Set<Integer> demo = x.keySet();
-        // for (Integer integer : demo) {
-        //     if (str1 == integer) {
-        //         int res = x.get(str1) + str2;
-        //         x.put(str1, res);
-        //     }
-        // }
-        if (x.get(str1) != null) {
-            int res = x.get(str1) + str2;
-            x.put(str1, res);
-        } else {
-            x.put(str1, str2);
-        }
-    }
+	public static void show(Map<Integer, Integer> x, int str1, int str2) {
+		// Set<Integer> demo = x.keySet();
+		// for (Integer integer : demo) {
+		//     if (str1 == integer) {
+		//         int res = x.get(str1) + str2;
+		//         x.put(str1, res);
+		//     }
+		// }
+		if (x.get(str1) != null) {
+			int res = x.get(str1) + str2;
+			x.put(str1, res);
+		} else {
+			x.put(str1, str2);
+		}
+	}
 
-    public static void show2(Map<Integer, Integer> x) {
-        // x.forEach((s1, s2) -> System.out.println(s1 + " " + s2));
-        Set<Map.Entry<Integer, Integer>> demo = x.entrySet();
-        demo.stream().sorted(new Comparator<Map.Entry<Integer, Integer>>() {
-            @Override
-            public int compare(Map.Entry<Integer, Integer> o1, Map.Entry<Integer, Integer> o2) {
-                return o1.getKey() - o2.getKey();
-            }
-        }).forEach(s1 -> System.out.println(s1.getKey() + " " + x.get(s1.getKey())));
-    }
+	public static void show2(Map<Integer, Integer> x) {
+		// x.forEach((s1, s2) -> System.out.println(s1 + " " + s2));
+		Set<Map.Entry<Integer, Integer>> demo = x.entrySet();
+		demo.stream().sorted((o1, o2) -> o1.getKey() - o2.getKey()).forEach(s1 -> System.out.println(s1.getKey() + " " + x.get(s1.getKey())));
+	}
 }
