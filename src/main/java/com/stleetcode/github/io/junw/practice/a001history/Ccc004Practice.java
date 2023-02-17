@@ -20,15 +20,15 @@ public class Ccc004Practice {
             int demoj = num * num;
             for (int i = demoj - num + 1, j = 0; j < num; i += 2, j++) {
                 if (j == num - 1) {
-                    System.out.print(i);
+                    log.info(String.valueOf(i));
                 } else {
-                    System.out.print(i + "+");
+                    log.info(i + "+");
                 }
             }
             //}else{
             //  int demoo=num*num;
             //for(int i=demoo-num+1,j=0;j<num;i+=2,j++){
-            //  System.out.print(i+"+");
+            //  log.info(i+"+");
             //}
 
             //}
@@ -54,7 +54,7 @@ public class Ccc004Practice {
 //                 sb.append("+");
 //                 sb.append(a1);
 //             }
-//             System.out.println(sb);
+//             log.info(sb);
 //         }
 //     }
 // }

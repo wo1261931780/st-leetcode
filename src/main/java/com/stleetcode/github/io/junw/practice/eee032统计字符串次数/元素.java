@@ -74,6 +74,6 @@ public class 元素 {
                 }
             }
         }
-        System.out.println(elementMap);
+        log.info(String.valueOf(elementMap));
     }
 }

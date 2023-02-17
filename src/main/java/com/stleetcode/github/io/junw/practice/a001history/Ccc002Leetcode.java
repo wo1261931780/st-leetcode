@@ -18,13 +18,13 @@ public class Ccc002Leetcode {
         int demo = 0;
         while (true) {
             // x2.append(x1 % 2);
-            // System.out.println(x1 %= 2);
+            // log.info(x1 %= 2);
             // log.info("x1:" + x1);
             // log.info("8%2" + 8 % 2);
 
             if ((x1 / 2) == 1) {
                 demo++;
-                System.out.println(demo);
+                log.info(String.valueOf(demo));
                 break;
             } else if ((x1 % 2) == 0) {
                 x1 /= 2;

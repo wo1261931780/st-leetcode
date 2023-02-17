@@ -1,17 +1,20 @@
 package com.stleetcode.github.io.junw.practice.eee118自己出题2;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.security.SecureRandom;
 /**
  * @author junw
  */
 
+@Slf4j
 public class demo出题器 {
 	public static void main(String[] args) {
 		// Random x = new Random();
 		SecureRandom x = new SecureRandom();
 		for (int i = 0; i < 3; i++) {
 			int x1 = x.nextInt(44);
-			System.out.println(x1);
+			log.info(String.valueOf(x1));
 		}
 		// 2021年10月29日19:10:05
 		// ===========4，7，17

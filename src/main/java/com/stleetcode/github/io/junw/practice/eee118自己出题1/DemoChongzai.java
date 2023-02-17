@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 
 
 @Slf4j
-public class demo_chongzai {
+public class DemoChongzai {
 	public static void main(String[] args) {
 
 		show(1);
@@ -18,14 +18,14 @@ public class demo_chongzai {
 	}
 
 	public static void show(int x) {
-		System.out.println(x);
+		log.info(String.valueOf(x));
 	}
 
 	public static void show(int x, int y) {
-		System.out.println(x + y);
+		log.info(String.valueOf(x + y));
 	}
 
 	public static void show(int x, int y, int z) {
-		System.out.println(x + y + z);
+		log.info(String.valueOf(x + y + z));
 	}
 }

@@ -39,12 +39,12 @@ public class 测试类 {
 				x2.put(x3, x4);
 			}
 		}
-		System.out.println(x2);
+		log.info(String.valueOf(x2));
 		StringBuilder x6 = new StringBuilder();
 		Set<Character> x5 = x2.keySet();
 		for (Character x7 : x5) {
 			x6.append(x7).append("(").append(x2.get(x7)).append(")").append("-");
 		}
-		System.out.println(x6);
+		log.info(String.valueOf(x6));
 	}
 }

@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220409;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Scanner;
 
 /**
@@ -16,7 +18,7 @@ import java.util.Scanner;
  * +14
  * @author junw
  */
-
+@Slf4j
 public class ccc003 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -26,11 +28,11 @@ public class ccc003 {
 
 		for (long i = 2; i <= k; ++i) {
 			while (num % i == 0) {
-				System.out.print(i + " ");
+				log.info(i + " ");
 				num /= i;
 			}
 		}
-		System.out.println(num == 1 ? "" : num + " ");
+		log.info(num == 1 ? "" : num + " ");
 	}
 
 	// 2022年4月9日21:13:58
@@ -75,7 +77,7 @@ public class ccc003 {
 	//     x2.sort((Comparator.comparingInt(o -> o)));
 	//     for (int i = 0; i < x2.size(); i++) {
 	//         String x3 = i == x2.size() - 1 ? "" : " ";
-	//         System.out.print(x2.get(i) + x3);
+	//         log.info(x2.get(i) + x3);
 	//     }
 	// }
 	//
@@ -83,10 +85,10 @@ public class ccc003 {
 	//     long demo = (long) Math.sqrt(demonum);
 	//     for (long i = 2; i < demo; i++) {
 	//         while (demo % i == 0) {
-	//             // System.out.println(demo + " ");
+	//             // log.info(demo + " ");
 	//             demo /= i;
 	//         }
 	//     }
-	//     // System.out.println(demo == 1 ? "" : demo + "");
+	//     // log.info(demo == 1 ? "" : demo + "");
 	// }
 }

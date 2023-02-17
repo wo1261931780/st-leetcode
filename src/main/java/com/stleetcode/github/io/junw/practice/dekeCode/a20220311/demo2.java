@@ -1,7 +1,10 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220311;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 
+@Slf4j
 public class demo2 {
 	public static void main(String[] args) {
 		String x = "12 68 798 78 46 234 968 798 87";
@@ -17,7 +20,7 @@ public class demo2 {
 			xBuilder.append(i == x1.size() - 1 ? x1.get(i) + "" : x1.get(i) + " ");
 		}
 		x = xBuilder.toString();
-		System.out.println(x);
+		log.info(x);
 	}
 
 	public static void show(ArrayList<Integer> x) {

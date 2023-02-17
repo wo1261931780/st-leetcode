@@ -22,7 +22,7 @@ public class ccc001 {
 		OUT:
 		for (int i = 0; i < x.length; i++) {
 			if (x[i] == 8) {
-				System.out.println(i + "，循环中");
+				log.info(i + "，循环中");
 				break OUT;
 			}
 		}
@@ -33,6 +33,6 @@ public class ccc001 {
 	public static void show1() {
 		Scanner x = new Scanner(System.in);
 		int demo = x.nextInt(3);
-		System.out.println(demo);
+		log.info(String.valueOf(demo));
 	}
 }

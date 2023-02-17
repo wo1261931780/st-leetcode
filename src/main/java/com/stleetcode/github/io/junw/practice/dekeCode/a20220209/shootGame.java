@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220209;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -12,6 +14,7 @@ import java.util.stream.Collectors;
  * Description: 100%
  * @author junw
  */
+@Slf4j
 public class shootGame {
   /*
   给定一个射击比赛成绩单
@@ -96,7 +99,7 @@ public class shootGame {
 				.map(Map.Entry::getKey)
 				.forEach(x -> builder.append(x).append(","));
 
-		System.out.println(builder.substring(0, builder.length() - 1));
+		log.info(builder.substring(0, builder.length() - 1));
 
 	}
 

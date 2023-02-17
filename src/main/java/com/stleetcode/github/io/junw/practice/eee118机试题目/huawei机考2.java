@@ -19,7 +19,7 @@ public class huawei机考2 {
 		Scanner x = new Scanner(System.in);
 		String x1 = x.nextLine();
 		String x2 = Arrays.toString(x1.split(" "));
-		System.out.println(x2);
+		log.info(x2);
 		for (String i : x2.split("")) {
 			if ("0".equals(i)) {
 				log.info("避免if空体");

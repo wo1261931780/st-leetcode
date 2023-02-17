@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220210;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -15,6 +17,7 @@ import java.util.Scanner;
  * Description:
  * @author junw
  */
+@Slf4j
 public class a76身高相近的小朋友 {
   /*
   在学校中
@@ -71,7 +74,7 @@ public class a76身高相近的小朋友 {
 		int n = Integer.parseInt(in.nextLine());
 
 		if (n == 0) {
-			System.out.println(0);
+			log.info(String.valueOf(0));
 			return;
 		}
 		String[] strs = in.nextLine().split(" ");
@@ -96,7 +99,7 @@ public class a76身高相近的小朋友 {
 		res.forEach(x -> builder.append(x).append(" "));
 		if (builder.length() > 1) {
 			String substring = builder.substring(0, builder.length() - 1);
-			System.out.println(substring);
+			log.info(substring);
 		}
 
 	}

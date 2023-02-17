@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220309;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Arrays;
 
 /**
@@ -10,6 +12,7 @@ import java.util.Arrays;
  * Time:  2022-03-11-38  星期三
  * @author junw
  */
+@Slf4j
 public class ccc001 {
 	public static void main(String[] args) {
 		int[] x = {452, 3, 54, 98, 7, 987, 9, 7, 79, 78, 7, 894, 62, 132, 1};
@@ -34,14 +37,14 @@ public class ccc001 {
 				}
 			}
 		}
-		System.out.println(Arrays.toString(x));
+		log.info(Arrays.toString(x));
 	}
 
 	// --注释掉检查 START (2022-09-01 12:35):
 //    public static void show1(int[] x) {
 //        Arrays.sort(x);
 // --注释掉检查 START (2022-09-01 12:35):
-////        System.out.println(Arrays.toString(x));
+////        log.info(Arrays.toString(x));
 ////    }
 //// --注释掉检查 STOP (2022-09-01 12:35)
 //
@@ -57,7 +60,7 @@ public class ccc001 {
 //// --注释掉检查 STOP (2022-09-01 12:35)
 //            }
 //        }
-//        System.out.println(Arrays.toString(x));
+//        log.info(Arrays.toString(x));
 //    }
 
 // --注释掉检查 START (2023/2/17 13:15):
@@ -67,7 +70,7 @@ public class ccc001 {
 //		for (int j : x) {
 //			demo1.add(j);
 //		}
-//		System.out.println(demo1);
+//		log.info(demo1);
 //	}
 // --注释掉检查 STOP (2023/2/17 13:15)
 

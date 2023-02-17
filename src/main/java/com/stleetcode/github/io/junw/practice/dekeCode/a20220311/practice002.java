@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220311;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Arrays;
 
 /**
@@ -10,6 +12,7 @@ import java.util.Arrays;
  * Time:  2022-03-16-56  ÐÇÆÚÈÕ
  * @author junw
  */
+@Slf4j
 public class practice002 {
 	public static void main(String[] args) {
 		int[] x = {1, 23, 1, 2, 11};
@@ -23,6 +26,6 @@ public class practice002 {
 				}
 			}
 		}
-		System.out.println(Arrays.toString(x));
+		log.info(Arrays.toString(x));
 	}
 }

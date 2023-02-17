@@ -32,7 +32,7 @@ public class ccc001 {
 //        for (int i = 0; i < show_num; i++) {
 //            int demo_num = x1.nextInt();
 //            if (demo_num >= 1 && demo_num <= 500) {
-//                System.out.println(demo_num);
+//                log.info(demo_num);
 //                x2.add(demo_num);
 //            }
 //        }

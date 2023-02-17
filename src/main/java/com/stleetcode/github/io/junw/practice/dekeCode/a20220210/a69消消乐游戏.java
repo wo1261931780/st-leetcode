@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220210;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -12,6 +14,7 @@ import java.util.Scanner;
  * Description:100%
  * @author junw
  */
+@Slf4j
 public class a69消消乐游戏 {
 	public static void main(String[] args) {
         /*
@@ -38,7 +41,7 @@ public class a69消消乐游戏 {
 				          .replaceAll("[a-z]", "")
 				          .length();
 		if (len != 0) {
-			System.out.println(0);
+			log.info(String.valueOf(0));
 			return;
 		}
 
@@ -59,7 +62,7 @@ public class a69消消乐游戏 {
 			}
 		}
 
-		System.out.println(characters.size());
+		log.info(String.valueOf(characters.size()));
 
 	}
 }

@@ -25,7 +25,7 @@ public class demo_leetcode {
 				num++;
 			}
 		}
-		System.out.println(num);
+		log.info(String.valueOf(num));
 	}
 
 	public static int testNum(int x, int num) {

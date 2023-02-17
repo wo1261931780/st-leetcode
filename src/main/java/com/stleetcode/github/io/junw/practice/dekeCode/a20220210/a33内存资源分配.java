@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220210;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -15,6 +17,7 @@ import java.util.TreeMap;
  * Description:
  * @author junw
  */
+@Slf4j
 public class a33内存资源分配 {
 	public static void main(String[] args) {
         /*
@@ -96,6 +99,6 @@ public class a33内存资源分配 {
 			}
 		}
 
-		System.out.println(builder.substring(0, builder.length() - 1));
+		log.info(builder.substring(0, builder.length() - 1));
 	}
 }

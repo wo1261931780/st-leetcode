@@ -20,7 +20,7 @@ public class misDemoSort {
 			x.add(x2);
 			i++;
 		}
-		System.out.println(x);
+		log.info(String.valueOf(x));
 		// x.sort();
 		for (i = 0; i < x.size(); i++) {
 			int max;

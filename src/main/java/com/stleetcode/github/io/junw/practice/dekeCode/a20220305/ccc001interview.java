@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220305;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -11,6 +13,7 @@ import java.util.Set;
  * Time:  2022-03-11-58  ÐÇÆÚÒ»
  * @author junw
  */
+@Slf4j
 public class ccc001interview {
 	public static void main(String[] args) {
 		show();
@@ -28,13 +31,13 @@ public class ccc001interview {
 			char demo = text.charAt(i);
 			x2.add(String.valueOf(demo));
 		}
-		System.out.println(x2);
+		log.info(x2.toString());
 		StringBuilder textBuilder = new StringBuilder();
 		for (int i = 0; i < x2.size(); i++) {
 			textBuilder.append(x2.toArray()[i]);
 		}
 		text = textBuilder.toString();
-		System.out.println(text);
+		log.info(text);
 
 		// String removeDul (String text){
 		// }

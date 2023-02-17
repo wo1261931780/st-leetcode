@@ -60,7 +60,7 @@ public class a031连续自然数之和 {
 
 		Scanner in = new Scanner(System.in);
 		int t = Integer.parseInt(in.nextLine());
-		System.out.println(t + "=" + t);
+		log.info(t + "=" + t);
 
 		ArrayList<String> res = new ArrayList<>();
 

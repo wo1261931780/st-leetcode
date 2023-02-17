@@ -51,13 +51,13 @@ public class eee033统计字符串次数 {
 				// 如果直接运行，就会报错
 			}
 		}
-		System.out.println(x);
+		log.info(String.valueOf(x));
 		Set<Character> x4 = x.keySet();
 		StringBuilder x6 = new StringBuilder();
 		for (Character i : x4) {
 			x6.append(i).append("(").append(x.get(i)).append(")").append("-");
 		}
-		System.out.println(x6);
+		log.info(String.valueOf(x6));
 
 	}
 }

@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220210;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Scanner;
 
 
@@ -12,6 +14,7 @@ import java.util.Scanner;
  * Description:
  * @author junw
  */
+@Slf4j
 public class a75字符串子串 {
   /*
   输入一串字符串
@@ -69,7 +72,7 @@ public class a75字符串子串 {
 			}
 		}
 
-		System.out.println(maxLen);
+		log.info(String.valueOf(maxLen));
 
 	}
 

@@ -17,9 +17,9 @@ public class Ccc006Pr {
 		// char s = 98;
 
 		for (int i = 0; i < demo.length(); i++) {
-			System.out.println(demo.charAt(i));
+			log.info(String.valueOf(demo.charAt(i)));
 			int x2 = demo.charAt(i) + 1 - 32;
-			System.out.print(x2);
+			log.info(String.valueOf(x2));
 		}
 	}
 // --注释掉检查 START (2022-09-01 12:35):

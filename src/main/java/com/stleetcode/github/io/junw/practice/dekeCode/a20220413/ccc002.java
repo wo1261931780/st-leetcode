@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220413;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -16,6 +18,7 @@ import java.util.Set;
  * @author junw
  */
 
+@Slf4j
 public class ccc002 {
 	public static void main(String[] args) {
 		Scanner x = new Scanner(System.in);
@@ -26,6 +29,6 @@ public class ccc002 {
 			map.put(str, 1);
 		}
 		Set<Character> demo2 = map.keySet();
-		System.out.println(demo2.size());
+		log.info(String.valueOf(demo2.size()));
 	}
 }

@@ -1,15 +1,16 @@
 package com.stleetcode.github.io.junw.practice.eee118自己出题1;
+
 /**
  * @author junw
  */
 
-public class demo_student_obj {
+public class DemoStudentObj {
 	private int number;
 	private String name;
 	private int age;
 	private String address;
 
-	public demo_student_obj(int number, String name, int age, String address) {
+	public DemoStudentObj(int number, String name, int age, String address) {
 		this.number = number;
 		this.name = name;
 		this.age = age;
@@ -17,7 +18,7 @@ public class demo_student_obj {
 	}
 
 // --注释掉检查 START (2022-09-01 12:35):
-//    public demo_student_obj() {
+//    public DemoStudentObj() {
 //    }
 // --注释掉检查 START (2022-09-01 12:35):
 //// --注释掉检查 STOP (2022-09-01 12:35)
@@ -29,6 +30,10 @@ public class demo_student_obj {
 
 	public void setNumber(int number) {
 		this.number = number;
+	}
+
+	public int getNumber() {
+		return number;
 	}
 
 	public String getName() {

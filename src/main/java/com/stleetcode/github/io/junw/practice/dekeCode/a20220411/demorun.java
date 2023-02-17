@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220411;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +9,7 @@ import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.Set;
 
+@Slf4j
 public class demorun {
 	public static void main(String[] args) {
 		Map<Integer, Integer> map = new HashMap<>(20);
@@ -23,7 +26,7 @@ public class demorun {
 			int str1 = Integer.parseInt(strList[0]);
 			int str2 = Integer.parseInt(strList[1]);
 			show(map, str1, str2);
-			// System.out.println(str1);
+			// log.info(str1);
 		}
 		show2(map);
 
@@ -47,9 +50,9 @@ public class demorun {
 	}
 
 	public static void show2(Map<Integer, Integer> x) {
-		// x.forEach((s1, s2) -> System.out.println(s1 + " " + s2));
+		// x.forEach((s1, s2) -> log.info(s1 + " " + s2));
 		Set<Map.Entry<Integer, Integer>> demo = x.entrySet();
-		demo.stream().sorted(Comparator.comparingInt(Entry::getKey)).forEach(s1 -> System.out.println(s1.getKey() + " " + x.get(s1.getKey())));
-		// demo.stream().sorted((o1, o2) -> o1.getKey() - o2.getKey()).forEach(s1 -> System.out.println(s1.getKey() + " " + x.get(s1.getKey())));
+		demo.stream().sorted(Comparator.comparingInt(Entry::getKey)).forEach(s1 -> log.info(s1.getKey() + " " + x.get(s1.getKey())));
+		// demo.stream().sorted((o1, o2) -> o1.getKey() - o2.getKey()).forEach(s1 -> log.info(s1.getKey() + " " + x.get(s1.getKey())));
 	}
 }

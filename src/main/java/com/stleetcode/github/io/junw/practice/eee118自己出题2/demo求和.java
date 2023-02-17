@@ -29,11 +29,11 @@ public class demo求和 {
 			if (i % 7 == 0 || i % 10 == 7 || i / 10 % 10 == 7 || i / 100 == 7) {
 				log.info("避免if空体");
 			} else {
-				System.out.println(i);
+				log.info(String.valueOf(i));
 				x1 += i;
 			}
 		}
-		System.out.println(x1);
+		log.info(String.valueOf(x1));
 	}
 
 	public static void sub(int[] x, Random x1) {
@@ -42,6 +42,6 @@ public class demo求和 {
 			int x2 = x1.nextInt(1000);
 			x[i] = x2;
 		}
-		System.out.println(Arrays.toString(x));
+		log.info(Arrays.toString(x));
 	}
 }

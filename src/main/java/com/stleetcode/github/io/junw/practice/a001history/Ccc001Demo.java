@@ -9,7 +9,7 @@ import java.util.Scanner;
 //     public static void main(String[] args) {
 //         Scanner x=new Scanner(System.in);
 //         int x1 = x.nextInt();
-//         System.out.println(x1);
+//         log.info(x1);
 //     }
 // }
 
@@ -19,7 +19,7 @@ import java.util.Scanner;
 //         log.info("请输入数据:");
 //         double demo_num = x.nextDouble();
 //         int demo_x = (int) demo_num;
-//         System.out.println(demo_x);
+//         log.info(demo_x);
 //
 //     }
 // }
@@ -60,7 +60,7 @@ public class Ccc001Demo {
 			}
 		}
 		for (int j : x) {
-			System.out.println(j);
+			log.info(String.valueOf(j));
 		}
 	}
 }

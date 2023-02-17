@@ -37,7 +37,7 @@ public class Ccc005Practice {
 				xx[j] = mid;
 			}
 		}
-		System.out.println(Arrays.toString(xx));
+		log.info(Arrays.toString(xx));
 	}
 
 	public static int[] split1(String xx, int x1Len) {

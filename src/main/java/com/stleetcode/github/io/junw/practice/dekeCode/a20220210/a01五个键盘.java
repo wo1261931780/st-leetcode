@@ -97,11 +97,11 @@ public class a01五个键盘 {
 				}
 			}
 
-			System.out.println(builder);
-			System.out.println(builder.length());
+			log.info(String.valueOf(builder));
+			log.info(String.valueOf(builder.length()));
 		}
 
-		System.out.println(builder.length());
+		log.info(String.valueOf(builder.length()));
 	}
 
 	private static String reset(StringBuilder builder, String choose) {

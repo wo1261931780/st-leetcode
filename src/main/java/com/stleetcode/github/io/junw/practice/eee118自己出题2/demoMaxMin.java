@@ -1,11 +1,13 @@
 package com.stleetcode.github.io.junw.practice.eee118自己出题2;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.security.SecureRandom;
 import java.util.Arrays;
 /**
  * @author junw
  */
-
+@Slf4j
 public class demoMaxMin {
 	/**
 	 * 随机生成五个数字，自动判断最值，然后输出
@@ -19,7 +21,7 @@ public class demoMaxMin {
 			x2[i] = x1;
 		}
 
-		System.out.println(Arrays.toString(x2));
+		log.info(Arrays.toString(x2));
 		show(x2);
 	}
 
@@ -34,6 +36,6 @@ public class demoMaxMin {
 				min = i;
 			}
 		}
-		System.out.println(max + "-" + min);
+		log.info(max + "-" + min);
 	}
 }

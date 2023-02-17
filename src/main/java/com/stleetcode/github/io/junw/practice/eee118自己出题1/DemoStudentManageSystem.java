@@ -9,11 +9,11 @@ import java.util.Scanner;
  */
 
 @Slf4j
-public class demo_student_manage_system {
+public class DemoStudentManageSystem {
 	private static final String ST_CODE = "请输入学号：";
 
 	public static void main(String[] args) {
-		ArrayList<demo_student_obj> xx = new ArrayList<>();
+		ArrayList<DemoStudentObj> xx = new ArrayList<>();
 		int r = show(0);
 		while (r != 5) {
 			// int s = r;
@@ -61,10 +61,10 @@ public class demo_student_manage_system {
 		return x.nextInt();
 	}
 
-	public static void addStudent(ArrayList<demo_student_obj> xx) {
+	public static void addStudent(ArrayList<DemoStudentObj> xx) {
 		Scanner x1 = new Scanner(System.in);
 		Scanner xx1 = new Scanner(System.in);
-		System.out.println(ST_CODE);
+		log.info(ST_CODE);
 		int num = x1.nextInt();
 		// String num=x1.nextLine();
 		log.info("请输入姓名：");
@@ -73,16 +73,16 @@ public class demo_student_manage_system {
 		int age = x1.nextInt();
 		log.info("请输入地址：");
 		String addr = xx1.nextLine();
-		demo_student_obj x = new demo_student_obj(num, name, age, addr);
+		DemoStudentObj x = new DemoStudentObj(num, name, age, addr);
 		xx.add(x);
 		log.info("添加完成");
 	}
 
-	public static void removeStudent(ArrayList<demo_student_obj> xx) {
+	public static void removeStudent(ArrayList<DemoStudentObj> xx) {
 		Scanner x = new Scanner(System.in);
-		System.out.println(ST_CODE);
+		log.info(ST_CODE);
 		int x1 = x.nextInt();
-		for (demo_student_obj x2 : xx) {
+		for (DemoStudentObj x2 : xx) {
 			if (x1 == x2.getNumber()) {
 				xx.remove(x2);
 				log.info("删除成功");
@@ -91,12 +91,12 @@ public class demo_student_manage_system {
 		log.info("删除结束");
 	}
 
-	public static void changeStudent(ArrayList<demo_student_obj> xx) {
+	public static void changeStudent(ArrayList<DemoStudentObj> xx) {
 		Scanner x = new Scanner(System.in);
 		Scanner xx1 = new Scanner(System.in);
-		System.out.println(ST_CODE);
+		log.info(ST_CODE);
 		int x1 = x.nextInt();
-		for (demo_student_obj x2 : xx) {
+		for (DemoStudentObj x2 : xx) {
 			if (x1 == x2.getNumber()) {
 				log.info("请输入姓名：");
 				String x3 = xx1.nextLine();
@@ -113,10 +113,10 @@ public class demo_student_manage_system {
 		log.info("修改结束");
 	}
 
-	public static void showStudent(ArrayList<demo_student_obj> xx) {
+	public static void showStudent(ArrayList<DemoStudentObj> xx) {
 		log.info("学号" + "\t\t" + "姓名" + "\t\t" + "年龄" + "\t\t" + "住址");
-		for (demo_student_obj x : xx) {
-			System.out.println(x.getNumber() + "\t\t" + x.getName() + "\t\t" + x.getAge() + "\t\t" + x.getAddress());
+		for (DemoStudentObj x : xx) {
+			log.info(x.getNumber() + "\t\t" + x.getName() + "\t\t" + x.getAge() + "\t\t" + x.getAddress());
 		}
 		log.info("遍历结束");
 	}

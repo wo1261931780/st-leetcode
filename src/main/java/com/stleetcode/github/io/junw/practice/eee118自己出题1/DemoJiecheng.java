@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 
 @Slf4j
-public class demo_jiecheng {
+public class DemoJiecheng {
 	public static void main(String[] args) {
 		jc1();
 		log.info("结束");
@@ -26,7 +26,7 @@ public class demo_jiecheng {
 		for (int i = 2; i < x3; i++) {
 			xx[i] = xx[i - 1] + xx[i - 2];
 		}
-		System.out.println(Arrays.toString(xx));
+		log.info(Arrays.toString(xx));
 	}
 
 // --注释掉检查 START (2022-09-01 12:35):

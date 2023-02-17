@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220409;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -17,6 +19,7 @@ import java.util.Scanner;
  * ?1
  * @author junw
  */
+@Slf4j
 public class ccc002 {
 	public static final Map<String, String> XX = new HashMap<>();
 
@@ -49,7 +52,7 @@ public class ccc002 {
 		}
 		String res = resBuilder.toString();
 		trans3(res);
-		System.out.println(res);
+		log.info(res);
 	}
 
 	public static String trans(String demo, Map<String, String> x) {
@@ -72,7 +75,7 @@ public class ccc002 {
 			double pow = "0".equals(demo) ? 0 : Math.pow(2, i);
 			result2 += pow;
 		}
-		System.out.println(result2);
+		log.info(String.valueOf(result2));
 	}
 
 	public static String trans2(String num) {
@@ -99,7 +102,7 @@ public class ccc002 {
 		}
 		result = resultBuilder.toString();
 		return result;
-		// System.out.println(result);
+		// log.info(result);
 	}
 }
 // 0-1-2-3-4-5-6-7

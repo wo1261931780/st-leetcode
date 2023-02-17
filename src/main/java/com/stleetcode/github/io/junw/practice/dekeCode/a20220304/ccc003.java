@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220304;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Scanner;
 
 /**
@@ -10,6 +12,7 @@ import java.util.Scanner;
  * Time:  2022-03-13-10  ÐÇÆÚÎå
  * @author junw
  */
+@Slf4j
 public class ccc003 {
 	public static void main(String[] args) {
 		Scanner x1 = new Scanner(System.in);
@@ -18,7 +21,7 @@ public class ccc003 {
 			// int index=(x-2)/3+1;
 			int an = 2 + 3 * (index - 1);
 			int sum = index * (an + 2) / 2;
-			System.out.println(sum);
+			log.info(String.valueOf(sum));
 		}
 
 	}

@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220311;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -11,23 +13,23 @@ import java.time.LocalDateTime;
  * Time:  2022-03-13-30  ÐÇÆÚÎå
  * @author junw
  */
-
+@Slf4j
 public class demo {
 	public static void main(String[] args) {
 		LocalDate x = LocalDate.now();
-		System.out.println(x);// 2022-03-11
+		log.info(String.valueOf(x));// 2022-03-11
 		int demoYear = x.getYear();
-		System.out.println(demoYear);// 2022
-		System.out.println(x.getDayOfWeek().getValue());
-		System.out.println(x.getDayOfWeek());
-		System.out.println(x.getDayOfMonth());
-		System.out.println(x.getDayOfYear());
+		log.info(String.valueOf(demoYear));// 2022
+		log.info(String.valueOf(x.getDayOfWeek().getValue()));
+		log.info(String.valueOf(x.getDayOfWeek()));
+		log.info(String.valueOf(x.getDayOfMonth()));
+		log.info(String.valueOf(x.getDayOfYear()));
 
 
 		// LocalDateTime x1=LocalDateTime.now();
 		// LocalDate demo_time = x1.toLocalDate();
 		LocalDate demoTime = LocalDateTime.now().toLocalDate();//
-		System.out.println(demoTime);
+		log.info(String.valueOf(demoTime));
 
 
 	}

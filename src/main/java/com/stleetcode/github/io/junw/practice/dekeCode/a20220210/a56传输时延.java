@@ -1,11 +1,14 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220210;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Scanner;
 
 
 /**
  * @author junw
  */
+@Slf4j
 public class a56传输时延 {
 	public static void main(String[] args) {
         /*
@@ -74,7 +77,7 @@ public class a56传输时延 {
 			time++;
 		}
 
-		System.out.println(time);
+		log.info(String.valueOf(time));
 		in.close();
 	}
 }

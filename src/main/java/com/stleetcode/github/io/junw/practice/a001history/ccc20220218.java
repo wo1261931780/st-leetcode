@@ -49,11 +49,11 @@ public class ccc20220218 {
 			// 使用jdk11的新特性，将其替换为下面的代码
 
 			x1 = x1 + "0".repeat(8 - x2);
-			System.out.println(x1);
+			log.info(x1);
 		} else {
-			System.out.println(x1.substring(0, 8));
+			log.info(x1.substring(0, 8));
 			show(x1.substring(8, x2));
 		}
-		// System.out.println(x1);
+		// log.info(x1);
 	}
 }

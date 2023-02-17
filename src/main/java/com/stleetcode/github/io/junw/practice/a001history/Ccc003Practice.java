@@ -35,7 +35,7 @@ public class Ccc003Practice {
                 // }
                 int jc = 100 - jw - jm;
                 if (jc % 3 == 0 && 5 * jw + 3 * jm + jc / 3 == 100) {
-                    System.out.println(jw + " " + jm + " " + jc);
+                    log.info(jw + " " + jm + " " + jc);
                 }
             }
         }
@@ -61,10 +61,9 @@ public class Ccc003Practice {
                 if((100 - 7*x) % 4 == 0){
                     y = (100 - 7*x) / 4;
                     z = 100-x-y;
-                    System.out.print(x +" ");
-                    System.out.print(y +" ");
-                    System.out.print(z +" ");
-                    System.out.println();
+                    log.info(x +" ");
+                    log.info(y +" ");
+                    log.info(z +" ");
                 }
             }
         }

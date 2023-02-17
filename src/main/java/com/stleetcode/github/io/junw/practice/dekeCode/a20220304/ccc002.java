@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220304;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * Created by Intellij IDEA.
  * Project:index.pb
@@ -8,11 +10,12 @@ package com.stleetcode.github.io.junw.practice.dekeCode.a20220304;
  * Time:  2022-03-11-47  星期五
  * @author junw
  */
+@Slf4j
 public class ccc002 {
 	public static void main(String[] args) {
 		// 1.递归，计算兔子数量
 		// Scanner x = new Scanner(System.in);
-		System.out.println(show(9));
+		log.info(String.valueOf(show(9)));
 	}
 
 	public static int show(int x) {

@@ -29,6 +29,6 @@ public class Ccc007Demo {
                 j++;
             }
         }
-        System.out.println(j);
+        log.info(String.valueOf(j));
     }
 }

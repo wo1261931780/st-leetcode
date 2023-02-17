@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220309;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -12,6 +14,7 @@ import java.util.Set;
  * @author junw
  */
 
+@Slf4j
 public class ccc003 {
 	public static void main(String[] args) {
 		String x = "deaslasdhakjdhaksjd";
@@ -25,7 +28,7 @@ public class ccc003 {
 			xxBuilder.append(x1.toArray()[i]);
 		}
 		xx = xxBuilder.toString();
-		System.out.println(xx);
-		System.out.println(xx.length());
+		log.info(xx);
+		log.info(String.valueOf(xx.length()));
 	}
 }

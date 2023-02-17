@@ -1,5 +1,7 @@
 package com.stleetcode.github.io.junw.practice.dekeCode.a20220304;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Arrays;
 
 /**
@@ -11,11 +13,10 @@ import java.util.Arrays;
  * @author junw
  */
 
-public class ccc006maopao {
+@Slf4j
+public class Ccc006Maopao {
 	public static void main(String[] args) {
-		System.out.println(Arrays.toString(show1()));
-
-
+		log.info(Arrays.toString(show1()));
 	}
 
 	public static int[] show1() {

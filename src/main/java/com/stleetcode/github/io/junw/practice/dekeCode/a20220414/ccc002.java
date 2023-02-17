@@ -115,7 +115,7 @@ public class ccc002 {
 				default -> log.info("默认块");
 			}
 		}
-		System.out.println(MAP);
+		log.info(MAP.toString());
 
 	}
 

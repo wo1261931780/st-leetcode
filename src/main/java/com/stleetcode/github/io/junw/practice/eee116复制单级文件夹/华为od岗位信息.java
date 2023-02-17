@@ -1,14 +1,17 @@
 package com.stleetcode.github.io.junw.practice.eee116复制单级文件夹;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author junw
  */
+@Slf4j
 public class 华为od岗位信息 {
 	public static void main(String[] args) {
 		int i = 7;
 		int j = 8;
 		int n = (i | j) % (i & j);
-		System.out.println(n);
+		log.info(String.valueOf(n));
 	}
 	// 11
 	// 测试

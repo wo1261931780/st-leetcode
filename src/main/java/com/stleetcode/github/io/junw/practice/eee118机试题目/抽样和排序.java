@@ -28,13 +28,13 @@ public class 抽样和排序 {
 		TreeSet<Object> x2 = new TreeSet<>();
 		while (i < xx1) {
 			int x1 = x.nextInt(1000) + 1;
-			System.out.println(x1);
+			log.info(String.valueOf(x1));
 			x2.add(x1);
 			i++;
 		}
 		log.info("-----");
 		for (Object i1 : x2) {
-			System.out.println(i1);
+			log.info((String) i1);
 		}
 
 
