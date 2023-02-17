@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.eee118自己出题2;
+package com.stleetcode.github.io.junw.practice.leetcode.a20230217;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author junw
  */
 @Slf4j
-public class DemoMaxMin {
+public class A043最大最小值 {
 	/**
 	 * 随机生成五个数字，自动判断最值，然后输出
 	 */

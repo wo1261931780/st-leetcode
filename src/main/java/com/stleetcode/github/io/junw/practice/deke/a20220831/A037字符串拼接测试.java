@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220901;
+package com.stleetcode.github.io.junw.practice.deke.a20220831;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -25,7 +25,7 @@ public class A037字符串拼接测试 {
 	}
 
 	public static void exchange(String str, char[] ch) {
-		String newStr = "test ok";
+		String newStr = "A040两种通配符的字符串的匹配功能 ok";
 		ch[0] = 'g';
 	}
 }

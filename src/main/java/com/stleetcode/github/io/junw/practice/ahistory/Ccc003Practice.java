@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.history;
+package com.stleetcode.github.io.junw.practice.ahistory;
 
 import lombok.extern.slf4j.Slf4j;
 

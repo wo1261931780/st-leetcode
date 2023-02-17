@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.eee118自己出题2;
+package com.stleetcode.github.io.junw.practice.eee118自己出题1;
 
 import lombok.extern.slf4j.Slf4j;
 

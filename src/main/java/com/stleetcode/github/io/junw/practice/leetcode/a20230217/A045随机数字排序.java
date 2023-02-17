@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.eee118自己出题2;
+package com.stleetcode.github.io.junw.practice.leetcode.a20230217;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @author junw
  */
 @Slf4j
-public class MisDemoSort {
+public class A045随机数字排序 {
 	public static void main(String[] args) {
 		// 获得两个随机数字，参与数组排序，并展示结果
 		ArrayList<Integer> x = new ArrayList<>();

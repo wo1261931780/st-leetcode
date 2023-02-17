@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.eee118自己出题2;
+package com.stleetcode.github.io.junw.practice.leetcode.a20230217;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -10,7 +10,7 @@ import java.util.Random;
  */
 
 @Slf4j
-public class Demo求和 {
+public class A044求和 {
 	public static void main(String[] args) {
 		// Random random = new Random();
 		// 使用伪随机数生成器（PRNGs）是安全敏感的。例如，它在过去导致了以下漏洞。

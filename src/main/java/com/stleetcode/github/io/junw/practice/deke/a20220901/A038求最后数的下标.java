@@ -1,11 +1,11 @@
-package com.stleetcode.github.io.junw.practice.eee118机试题目;
+package com.stleetcode.github.io.junw.practice.deke.a20220901;
 
 import java.util.Scanner;
 
 /**
  * @author junw
  */
-public class huawei机考 {
+public class A038求最后数的下标 {
 	public static void main(String[] args) {
 		// 有一个数组 a[N] 顺序存放 0 ~ N-1 ，
 		// 要求每隔两个数删掉一个数，到末尾时循环至开头继续进行，

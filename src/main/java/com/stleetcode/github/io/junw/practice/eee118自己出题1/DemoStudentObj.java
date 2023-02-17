@@ -17,16 +17,8 @@ public class DemoStudentObj {
 		this.address = address;
 	}
 
-// --注释掉检查 START (2022-09-01 12:35):
-//    public DemoStudentObj() {
-//    }
-// --注释掉检查 START (2022-09-01 12:35):
-//// --注释掉检查 STOP (2022-09-01 12:35)
-//
-//    public int getNumber() {
-//        return number;
-//    }
-// --注释掉检查 STOP (2022-09-01 12:35)
+	public DemoStudentObj() {
+	}
 
 	public void setNumber(int number) {
 		this.number = number;

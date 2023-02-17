@@ -9,12 +9,10 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class DemoChongzai {
 	public static void main(String[] args) {
-
 		show(1);
 		show(1, 2);
 		show(1, 2, 3);
 		log.info("结束");
-
 	}
 
 	public static void show(int x) {
