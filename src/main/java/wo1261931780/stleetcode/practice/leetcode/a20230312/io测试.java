@@ -18,10 +18,10 @@ public class io测试 {
 		}
 		log.info(Arrays.toString(demo));
 		// log.info("******************");
-		// rank(demo);
+		// rank(A20230416001);
 		// log.info("******************");
-		// Arrays.sort(demo);
-		// log.info(Arrays.toString(demo));
+		// Arrays.sort(A20230416001);
+		// log.info(Arrays.toString(A20230416001));
 		log.info("******************");
 		rankList(demo);
 	}
