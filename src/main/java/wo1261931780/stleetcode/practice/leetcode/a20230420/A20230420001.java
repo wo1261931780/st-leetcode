@@ -12,23 +12,62 @@ import java.util.Scanner;
  * @description
  */
 public class A20230420001 {
+	/**
+	 * 描述
+	 * 给定一个仅包含小写字母的字符串，求它的最长回文子串的长度。
+	 * 所谓回文串，指左右对称的字符串。
+	 * 所谓子串，指一个字符串删掉其部分前缀和后缀（也可以不删）的字符串
+	 * 数据范围：字符串长度
+	 * 1
+	 * ≤
+	 * �
+	 * ≤
+	 * 350
+	 * <p>
+	 * 1≤s≤350
+	 * 进阶：时间复杂度：
+	 * �
+	 * (
+	 * �
+	 * )
+	 * <p>
+	 * O(n) ，空间复杂度：
+	 * �
+	 * (
+	 * �
+	 * )
+	 * <p>
+	 * O(n)
+	 * 输入描述：
+	 * 输入一个仅包含小写字母的字符串
+	 * <p>
+	 * 输出描述：
+	 * 返回最长回文子串的长度
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		String nextLine = scanner.nextLine();// 输入字符串
-		// StringBuilder stringBuilder = new StringBuilder(); // 创建一个StringBuilder对象
-		// stringBuilder.append(nextLine);// 将字符串添加到StringBuilder对象中
-		// StringBuilder reverse = stringBuilder.reverse();// 反转字符串
-		String stringBuilderR = new StringBuilder().append(nextLine).reverse().toString();// 反转字符串
-		String demo = "";
-		for (int i = 0; i < nextLine.length(); i++) {
-			if (nextLine.charAt(i) == stringBuilderR.charAt(i)) {
-				demo += nextLine.charAt(i);
-			} else if (demo.length() > 1) {
-				System.out.println(demo.length());
-				return;
-			} else {
-				demo = "";// 如果不相等，就清空
+		Scanner input = new Scanner(System.in);
+		String s = input.nextLine();
+		int max = 0;
+		/**
+		 *双指针遍历找到最长子串
+		 */
+		for (int i = 0; i < s.length(); i++) {
+			for (int j = s.length(); j > i; j--) {
+				String toBeJudged = s.substring(i, j);
+				if (isPalindromeString(toBeJudged)) {
+					max = Math.max(max, j - i);
+				}
 			}
 		}
+		System.out.print(max);
+	}
+	
+	/**
+	 * 判断一个字符串是否是回文字符串的方法
+	 */
+	public static boolean isPalindromeString(String s) {
+		return s.equals(new StringBuilder(s).reverse().toString());
 	}
 }
