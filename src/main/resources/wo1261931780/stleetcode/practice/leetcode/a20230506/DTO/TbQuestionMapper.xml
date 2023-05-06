@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wo1261931780.stleetcode.practice.leetcode.a20230506.DAO.TbQuestionMapper">
+  <resultMap id="BaseResultMap" type="wo1261931780.stleetcode.practice.leetcode.a20230506.entity.TbQuestion">
+    <!--@mbg.generated-->
+    <!--@Table interview.tb_question-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="tags" jdbcType="VARCHAR" property="tags" />
+    <result column="question" jdbcType="INTEGER" property="question" />
+    <result column="answer" jdbcType="INTEGER" property="answer" />
+    <result column="status" jdbcType="BOOLEAN" property="status" />
+    <result column="answerer" jdbcType="VARCHAR" property="answerer" />
+    <result column="classic" jdbcType="BOOLEAN" property="classic" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="delete_flag" jdbcType="BOOLEAN" property="deleteFlag" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, title, tags, question, answer, `status`, answerer, classic, create_user, create_time, 
+    update_user, update_time, delete_flag
+  </sql>
+</mapper>
