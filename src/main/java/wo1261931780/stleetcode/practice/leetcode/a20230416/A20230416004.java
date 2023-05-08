@@ -95,7 +95,7 @@ public class A20230416004 {
 						demo.append(0);
 						break;
 				}
-				// demo.append((char) (c - 'a' + '2'));
+				// A20230508001.append((char) (c - 'a' + '2'));
 			} else if (c >= 'A' && c <= 'Z') {
 				if (c == 'Z') {
 					// nextLine = nextLine.replace(c, 'a');
@@ -110,15 +110,15 @@ public class A20230416004 {
 		}
 		// System.out.println(nextLine);
 		System.out.println(demo);
-		
+
 		sampleCode();
 	}
-	
-	
+
+
 	// 定义map容器存储按键对应数字字符的容器
 	// 静态初始化、加载map容器
 	private static Map<String, String> demoMap = new HashMap<>();
-	
+
 	static {
 		demoMap.put("1", "1");
 		demoMap.put("abc", "2");
@@ -131,7 +131,7 @@ public class A20230416004 {
 		demoMap.put("wxyz", "9");
 		demoMap.put("0", "0");
 	}
-	
+
 	public static void sampleCode() {
 		Scanner scanner = new Scanner(System.in);
 		while (scanner.hasNext()) {
