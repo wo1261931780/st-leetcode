@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220509;
+package wo1261931780.stleetcode.practice.deke.a20220509;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -19,6 +19,7 @@ import java.util.Set;
  * 如果返回值不是null：说明该字符在HashMap集合中存在，把该值加1，然后重新存储该字符和对应的值
  * 5:遍历HashMap集合，得到键和值，按照要求进行拼接
  * 6:输出结果
+ *
  * @author junw
  */
 @Slf4j
@@ -28,7 +29,7 @@ public class A035统计字符串中每个字符串出现的次数 {
 		log.info("开始");
 		String x1 = x.nextLine();
 		HashMap<Character, Integer> x2 = new HashMap<>(20);
-
+		
 		for (int i = 0; i < x1.length(); i++) {
 			Character x3 = x1.charAt(i);
 			Integer x4 = x2.get(x3);

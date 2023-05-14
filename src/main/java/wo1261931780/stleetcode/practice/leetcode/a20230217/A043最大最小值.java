@@ -1,9 +1,10 @@
-package com.stleetcode.github.io.junw.practice.leetcode.a20230217;
+package wo1261931780.stleetcode.practice.leetcode.a20230217;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.security.SecureRandom;
 import java.util.Arrays;
+
 /**
  * @author junw
  */
@@ -20,11 +21,11 @@ public class A043最大最小值 {
 			int x1 = x.nextInt(1000);
 			x2[i] = x1;
 		}
-
+		
 		log.info(Arrays.toString(x2));
 		show(x2);
 	}
-
+	
 	public static void show(int[] x2) {
 		int max = x2[0];
 		int min = x2[0];

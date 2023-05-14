@@ -1,7 +1,5 @@
 package wo1261931780.stleetcode.practice.leetcode.a20230420;
 
-import org.bouncycastle.math.Primes.STOutput;
-
 import java.util.Scanner;
 
 /**

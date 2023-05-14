@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220311;
+package wo1261931780.stleetcode.practice.deke.a20220311;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -10,6 +10,7 @@ import java.util.Arrays;
  * Package:leetcode.eee002deke_code.aaa007_20220311
  * User:  wo1261931780@gmail.com
  * Time:  2022-03-15-22  ÐÇÆÚÈÕ
+ *
  * @author junw
  */
 @Slf4j
@@ -29,7 +30,7 @@ public class A023排序 {
 		// log.info(Arrays.binarySearch(x, 1));
 		show(x);
 	}
-
+	
 	public static void show(int[] x) {
 		int mid;
 		for (int i = 0; i < x.length; i++) {

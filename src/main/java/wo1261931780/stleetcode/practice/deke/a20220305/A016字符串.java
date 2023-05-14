@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220305;
+package wo1261931780.stleetcode.practice.deke.a20220305;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -11,6 +11,7 @@ import java.util.Set;
  * Package:c2stage_20220306.ccc88tcp
  * User:  wo1261931780@gmail.com
  * Time:  2022-03-11-58  ÐÇÆÚÒ»
+ *
  * @author junw
  */
 @Slf4j
@@ -18,7 +19,7 @@ public class A016字符串 {
 	public static void main(String[] args) {
 		show();
 	}
-
+	
 	public static void show() {
 		String text = "GHEXADDBSOIJEHDNABLFJSQZXXAA";
 		Set<String> x2 = new LinkedHashSet<>();
@@ -26,7 +27,7 @@ public class A016字符串 {
 		for (int i = 0; i < text.length(); i++) {
 			// int x1 = text.charAt(i) - '0';
 			// xx.append(x1);
-
+			
 			char demo = text.charAt(i);
 			x2.add(String.valueOf(demo));
 		}
@@ -37,7 +38,7 @@ public class A016字符串 {
 		}
 		text = textBuilder.toString();
 		log.info(text);
-
+		
 		// String removeDul (String text){
 		// }
 	}

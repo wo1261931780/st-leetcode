@@ -13,7 +13,18 @@ public class aaa055复制数组 {
 		cop(show());
 		System.out.println("end");
 	}
-
+	
+	/**
+	 * 复制得到的数组
+	 *
+	 * @param bl 原始数组
+	 */
+	public static void cop(String[] bl) {
+		String[] xx = new String[bl.length];
+		System.arraycopy(bl, 0, xx, 0, bl.length);
+		System.out.println("复制得到的数组：" + Arrays.toString(xx));
+	}
+	
 	/**
 	 * 随机生成的数组
 	 *
@@ -28,30 +39,17 @@ public class aaa055复制数组 {
 			// Random xx=new Random();
 			if (x1 == 0) {
 				int x2 = x.nextInt(10) + 48;
-				bl[i] = (char) x2 + "";
+				bl[i] = String.valueOf((char) x2);
 			} else if (x1 == 1) {
 				int x2 = x.nextInt(26) + 65;
-				bl[i] = (char) x2 + "";
+				bl[i] = String.valueOf((char) x2);
 			} else {
 				int x2 = x.nextInt(26) + 97;
-				bl[i] = (char) x2 + "";
+				bl[i] = String.valueOf((char) x2);
 			}
 			System.out.println(bl[i]);
 		}
 		System.out.println("随机生成的数组：" + Arrays.toString(bl));
 		return bl;
-	}
-
-	/**
-	 * 复制得到的数组
-	 *
-	 * @param bl 原始数组
-	 */
-	public static void cop(String[] bl) {
-		String[] xx = new String[bl.length];
-		for (int i = 0; i < bl.length; i++) {
-			xx[i] = bl[i];
-		}
-		System.out.println("复制得到的数组：" + Arrays.toString(xx));
 	}
 }

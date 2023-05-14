@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220509;
+package wo1261931780.stleetcode.practice.deke.a20220509;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -22,7 +22,7 @@ import java.util.TreeMap;
 @Slf4j
 public class A034输出其每种元素的数量 {
 	public static void main(String[] args) {
-
+		
 		// 首先对元素进行遍历，判断有多少种元素
 		// 然后判断元素个数，
 		// 最后输出结果
@@ -37,12 +37,12 @@ public class A034输出其每种元素的数量 {
 		elementMap.put("O", 0);// 79
 		elementMap.put("Fe", 0);// 70/101
 		elementMap.put("S", 0);// 83
-
+		
 		Scanner inputElement = new Scanner(System.in);
 		log.info("请输入元素：");
 		// 将结果设置为字符串
 		String chElement = inputElement.nextLine();
-
+		
 		// 遍历
 		for (int i = 0; i < chElement.length(); i++) {
 			char indexElement = chElement.charAt(i);

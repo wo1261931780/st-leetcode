@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220304;
+package wo1261931780.stleetcode.practice.deke.a20220304;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -10,6 +10,7 @@ import java.util.Arrays;
  * Package:leetcode.eee002deke_code.aaa003_20220304
  * User:  wo1261931780@gmail.com
  * Time:  2022-03-22-15  ÐÇÆÚÎå
+ *
  * @author junw
  */
 
@@ -18,7 +19,7 @@ public class A014冒泡排序 {
 	public static void main(String[] args) {
 		log.info(Arrays.toString(show1()));
 	}
-
+	
 	public static int[] show1() {
 		int mid;
 		int[] x = {87, 132, 4, 68, 748, 9, 789, 79, 8, 7};

@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.ahistory;
+package wo1261931780.stleetcode.practice.ahistory;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -14,7 +14,7 @@ public class Ccc006Pr {
 		String demo = x.nextLine();
 		// String showstr = "";
 		// char s = 98;
-
+		
 		for (int i = 0; i < demo.length(); i++) {
 			log.info(String.valueOf(demo.charAt(i)));
 			int x2 = demo.charAt(i) + 1 - 32;

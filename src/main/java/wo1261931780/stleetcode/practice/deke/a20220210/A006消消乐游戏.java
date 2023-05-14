@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220210;
+package wo1261931780.stleetcode.practice.deke.a20220210;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -12,6 +12,7 @@ import java.util.Scanner;
  * Date: 2021/8/17
  * Time: 18:42
  * Description:100%
+ *
  * @author junw
  */
 @Slf4j
@@ -32,11 +33,11 @@ public class A006消消乐游戏 {
 
         事例：mMbccbc输出为3
          */
-
+		
 		Scanner in = new Scanner(System.in);
 		String str = in.nextLine();
 		in.close();
-
+		
 		int len = str.replaceAll("[A-Z]", "")
 				          .replaceAll("[a-z]", "")
 				          .length();
@@ -44,12 +45,12 @@ public class A006消消乐游戏 {
 			log.info(String.valueOf(0));
 			return;
 		}
-
+		
 		LinkedList<Character> characters = new LinkedList<>();
 		for (char c : str.toCharArray()) {
 			characters.add(c);
 		}
-
+		
 		int count = 0;
 		while (characters.size() != count) {
 			count = characters.size();
@@ -61,8 +62,8 @@ public class A006消消乐游戏 {
 				}
 			}
 		}
-
+		
 		log.info(String.valueOf(characters.size()));
-
+		
 	}
 }

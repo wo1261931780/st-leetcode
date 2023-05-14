@@ -1,12 +1,8 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220414;
+package wo1261931780.stleetcode.practice.deke.a20220414;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by Intellij IDEA.
@@ -64,11 +60,11 @@ import java.util.Scanner;
 @Slf4j
 public class A032开发一个坐标计算工具 {
 	public static final Map<Integer, Integer> MAP = new HashMap<>();
-
+	
 	static {
 		MAP.put(0, 0);
 	}
-
+	
 	public static void main(String[] args) {
 		Scanner x = new Scanner(System.in);
 		String[] initJh = x.nextLine().split(";");
@@ -90,13 +86,13 @@ public class A032开发一个坐标计算工具 {
 		}
 		show2(demo);
 	}
-
+	
 	// 首先将拿到的字符串，解析为一个数组，
 	// 对数组遍历，删除长度不等于3的，首字符不属于wasd的，
 	// 使用后面的字符除2，结果运行报错的
 	// 然后对数组的元素处理，将其分割，对初始的map进行数据操作
 	// 输出最终的map结果即可
-
+	
 	public static boolean show(String substring, int substring2) {
 		boolean x = "W".equals(substring) || "A".equals(substring) || "S".equals(substring) || "D".equals(substring);
 		try {
@@ -106,7 +102,7 @@ public class A032开发一个坐标计算工具 {
 		}
 		return x;
 	}
-
+	
 	public static void show2(List<String> demo) {
 		for (String s : demo) {
 			String str = s.substring(0, 1);
@@ -121,5 +117,5 @@ public class A032开发一个坐标计算工具 {
 		}
 		log.info(MAP.toString());
 	}
-
+	
 }

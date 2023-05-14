@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220310;
+package wo1261931780.stleetcode.practice.deke.a20220310;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -24,7 +24,7 @@ public class A020从小到大9在数组中的位置 {
 		int mid = x.length / 2;
 		log.info(String.valueOf(show(x, mid)));// 4
 	}
-
+	
 	public static int show(int[] x, int mid) {
 		for (int i = mid; i < x.length; i++) {
 			if (x[i] == 8) {

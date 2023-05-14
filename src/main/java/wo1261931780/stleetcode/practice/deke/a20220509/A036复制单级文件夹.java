@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220509;
+package wo1261931780.stleetcode.practice.deke.a20220509;
 /*
     需求：
         把E:\\itcast 这个文件夹复制到模块目录下
@@ -17,12 +17,7 @@ package com.stleetcode.github.io.junw.practice.deke.a20220509;
             由于文件不仅仅是文本文件，还有图片，视频等文件，所以采用字节流复制文件
  */
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * @author junw
@@ -63,9 +58,9 @@ public class A036复制单级文件夹 {
 			//     }
 			// }
 		}
-
+		
 	}
-
+	
 	/**
 	 * alt+enter直接创建方法
 	 */
@@ -83,6 +78,6 @@ public class A036复制单级文件夹 {
 		}
 		x.close();
 		x1.close();
-
+		
 	}
 }

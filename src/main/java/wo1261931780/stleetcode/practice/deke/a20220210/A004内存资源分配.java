@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220210;
+package wo1261931780.stleetcode.practice.deke.a20220210;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -70,7 +70,7 @@ public class A004内存资源分配 {
         说明1T大于2G4M大于3M2G
 
      */
-
+	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int n = Integer.parseInt(in.nextLine());
@@ -84,17 +84,17 @@ public class A004内存资源分配 {
 		sizes.sort((o1, o2) -> Long.compare(parseLong(o1), parseLong(o2)));
 		 */
 		sizes.sort(Comparator.comparingLong(A004内存资源分配::parseLong));
-
+		
 		sizes.forEach(System.out::println);
-
+		
 	}
-
+	
 	static Long parseLong(String size) {
 		String[] units = size.split("[0-9]+");
 		String[] nums = size.split("[A-Z]+");
 		//[, M, G, M]
 		//[3, 12, 9]
-
+		
 		long sum = 0;
 		for (int i = 1; i < units.length; i++) {
 			long num = Long.parseLong(nums[i - 1]);
@@ -102,12 +102,10 @@ public class A004内存资源分配 {
 				case "M" -> sum += num;
 				case "G" -> sum += num * 1024;
 				case "T" -> sum += num * 1024 * 1024;
-				default -> {
-					log.info("我是默认块");
-				}
+				default -> log.info("我是默认块");
 			}
 		}
-
+		
 		return sum;
 	}
 }

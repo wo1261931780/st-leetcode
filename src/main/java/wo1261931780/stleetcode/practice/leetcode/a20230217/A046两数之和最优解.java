@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.leetcode.a20230217;
+package wo1261931780.stleetcode.practice.leetcode.a20230217;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.leetcode.a20230217;
+package wo1261931780.stleetcode.practice.leetcode.a20230217;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -20,7 +20,7 @@ public class A047两个括号2 {
 		put('(', ')');
 		put('?', '?');
 	}};
-
+	
 	public boolean isValid(String s) {
 		if (s.length() > 0 && !map.containsKey(s.charAt(0))) {
 			return false;

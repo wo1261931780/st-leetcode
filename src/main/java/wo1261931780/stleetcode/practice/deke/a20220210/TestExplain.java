@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220210;
+package wo1261931780.stleetcode.practice.deke.a20220210;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 public class TestExplain {
 	public static void main(String[] args) {
 		log.info("华为德科常见机考题");
-
+		
 		log.info("1、单词加密");
 		log.info("2、玩牌高手");
 		log.info("3、找出符合要求的字符串子串");

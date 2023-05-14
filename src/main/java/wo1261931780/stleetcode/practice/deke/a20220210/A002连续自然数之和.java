@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220210;
+package wo1261931780.stleetcode.practice.deke.a20220210;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -14,6 +14,7 @@ import java.util.Scanner;
  * Date: 2021/3/11
  * Time: 15:38
  * Description:
+ *
  * @author junw
  */
 @Slf4j
@@ -57,13 +58,13 @@ public class A002连续自然数之和 {
         Result:2
 
          */
-
+		
 		Scanner in = new Scanner(System.in);
 		int t = Integer.parseInt(in.nextLine());
 		log.info(t + "=" + t);
-
+		
 		ArrayList<String> res = new ArrayList<>();
-
+		
 		for (int n = 1; n < t; n++) {
 			int sum = 0;
 			StringBuilder builder = new StringBuilder();
@@ -78,7 +79,7 @@ public class A002连续自然数之和 {
 		}
 		res.sort(Comparator.comparingInt(String::length));
 		res.forEach(System.out::println);
-
+		
 		log.info("Result:" + (res.size() + 1));
 		in.close();
 	}

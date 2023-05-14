@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220210;
+package wo1261931780.stleetcode.practice.deke.a20220210;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -52,7 +52,7 @@ public class A005传输时延 {
 
            说明，一次最多执行4个任务  最少耗时5s
          */
-
+		
 		Scanner in = new Scanner(System.in);
 		int n = Integer.parseInt(in.nextLine().trim());
 		int len = Integer.parseInt(in.nextLine().trim());
@@ -61,7 +61,7 @@ public class A005传输时延 {
 		for (int i = 0; i < len; i++) {
 			ints[i] = Integer.parseInt(split[i]);
 		}
-
+		
 		int time = 0;
 		int more = 0;
 		for (int i : ints) {
@@ -76,7 +76,7 @@ public class A005传输时延 {
 			more -= n;
 			time++;
 		}
-
+		
 		log.info(String.valueOf(time));
 		in.close();
 	}

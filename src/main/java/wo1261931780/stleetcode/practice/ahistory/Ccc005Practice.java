@@ -1,9 +1,10 @@
-package com.stleetcode.github.io.junw.practice.ahistory;
+package wo1261931780.stleetcode.practice.ahistory;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
 import java.util.Scanner;
+
 /**
  * @author junw
  */
@@ -25,7 +26,7 @@ public class Ccc005Practice {
 			log.info("避免if空体");
 		}
 	}
-
+	
 	public static void rank1(int[] xx, int x3) {
 		for (int i = 0; i < xx.length - 1; i++) {
 			int mid = 0;
@@ -37,7 +38,7 @@ public class Ccc005Practice {
 		}
 		log.info(Arrays.toString(xx));
 	}
-
+	
 	public static int[] split1(String xx, int x1Len) {
 		int[] x1 = new int[x1Len];
 		for (int i = 0, j = 0; i < xx.length(); i += 2, j++) {

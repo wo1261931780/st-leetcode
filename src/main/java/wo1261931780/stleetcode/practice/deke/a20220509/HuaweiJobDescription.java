@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220509;
+package wo1261931780.stleetcode.practice.deke.a20220509;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -28,6 +28,6 @@ public class HuaweiJobDescription {
 		 * 150分钟，150分
 		 * */
 		log.info("精英预备队");
-
+		
 	}
 }

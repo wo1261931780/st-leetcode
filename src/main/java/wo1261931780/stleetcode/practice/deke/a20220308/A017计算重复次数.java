@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220308;
+package wo1261931780.stleetcode.practice.deke.a20220308;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -10,6 +10,7 @@ import java.util.Arrays;
  * Package:leetcode.eee002deke_code.aaa004_20220305
  * User:  wo1261931780@gmail.com
  * Time:  2022-03-17-32  星期二
+ *
  * @author junw
  */
 @Slf4j

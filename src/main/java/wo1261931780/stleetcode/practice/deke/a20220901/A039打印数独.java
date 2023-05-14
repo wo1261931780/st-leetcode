@@ -1,9 +1,10 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220901;
+package wo1261931780.stleetcode.practice.deke.a20220901;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
 import java.util.Scanner;
+
 /**
  * @author junw
  */
@@ -15,7 +16,7 @@ public class A039打印数独 {
 		// 如有多解，输出一个解
 		// 输入9行，每行为空格隔开的9个数字，为0的地方就是需要填充的。
 		// 输出九行，每行九个空格隔开的数字，为解出的答案。
-
+		
 		Scanner x = new Scanner(System.in);
 		String x1 = x.nextLine();
 		String x2 = Arrays.toString(x1.split(" "));
@@ -25,7 +26,7 @@ public class A039打印数独 {
 				log.info("避免if空体");
 			}
 		}
-
-
+		
+		
 	}
 }

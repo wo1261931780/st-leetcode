@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220901;
+package wo1261931780.stleetcode.practice.deke.a20220901;
 
 import java.util.Scanner;
 
@@ -16,12 +16,12 @@ public class A038求最后数的下标 {
 		// 1<=n<=1000;
 		Scanner x = new Scanner(System.in);
 		// int x1 = x.nextInt();
-
+		
 		int[] x2 = new int[x.nextInt()];
 		for (int i = 0; i < x.nextInt(); i++) {
 			x2[i] = i;
 		}
-
+		
 	}
 
 // --注释掉检查 START (2022-09-01 12:35):

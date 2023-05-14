@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.ahistory;
+package wo1261931780.stleetcode.practice.ahistory;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -21,7 +21,7 @@ public class Ccc002Leetcode {
 			// log.info(x1 %= 2);
 			// log.info("x1:" + x1);
 			// log.info("8%2" + 8 % 2);
-
+			
 			if ((x1 / 2) == 1) {
 				demo++;
 				log.info(String.valueOf(demo));

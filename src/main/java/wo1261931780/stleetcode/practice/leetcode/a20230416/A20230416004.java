@@ -1,7 +1,5 @@
 package wo1261931780.stleetcode.practice.leetcode.a20230416;
 
-import lombok.extern.slf4j.Slf4j;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -18,6 +16,23 @@ import java.util.Set;
  */
 
 public class A20230416004 {
+	// 定义map容器存储按键对应数字字符的容器
+	// 静态初始化、加载map容器
+	private static final Map<String, String> demoMap = new HashMap<>();
+	
+	static {
+		demoMap.put("1", "1");
+		demoMap.put("abc", "2");
+		demoMap.put("def", "3");
+		demoMap.put("ghi", "4");
+		demoMap.put("jkl", "5");
+		demoMap.put("mno", "6");
+		demoMap.put("pqrs", "7");
+		demoMap.put("tuv", "8");
+		demoMap.put("wxyz", "9");
+		demoMap.put("0", "0");
+	}
+	
 	/**
 	 * 描述
 	 * 现在有一种密码变换算法。
@@ -110,28 +125,10 @@ public class A20230416004 {
 		}
 		// System.out.println(nextLine);
 		System.out.println(demo);
-
+		
 		sampleCode();
 	}
-
-
-	// 定义map容器存储按键对应数字字符的容器
-	// 静态初始化、加载map容器
-	private static Map<String, String> demoMap = new HashMap<>();
-
-	static {
-		demoMap.put("1", "1");
-		demoMap.put("abc", "2");
-		demoMap.put("def", "3");
-		demoMap.put("ghi", "4");
-		demoMap.put("jkl", "5");
-		demoMap.put("mno", "6");
-		demoMap.put("pqrs", "7");
-		demoMap.put("tuv", "8");
-		demoMap.put("wxyz", "9");
-		demoMap.put("0", "0");
-	}
-
+	
 	public static void sampleCode() {
 		Scanner scanner = new Scanner(System.in);
 		while (scanner.hasNext()) {
@@ -142,10 +139,10 @@ public class A20230416004 {
 			for (char c : chars) {
 				// 如果是正整数则不需要进行加密
 				if (c >= '0' && c <= '9') {
-					buffer.append(String.valueOf(c));
+					buffer.append(c);
 				} else if (c >= 'A' && c <= 'Y') { // 如果是A~Y的大写字母则需要将其+32位转换成小写再向后移1位
 					char newChar = (char) (c + 32 + 1);
-					buffer.append(String.valueOf(newChar));
+					buffer.append(newChar);
 				} else if (c == 'Z') { // 如果是Z则加密成a
 					buffer.append("a");
 				} else {
@@ -158,7 +155,7 @@ public class A20230416004 {
 					}
 				}
 			}
-			System.out.print(buffer.toString());
+			System.out.print(buffer);
 		}
 	}
 }

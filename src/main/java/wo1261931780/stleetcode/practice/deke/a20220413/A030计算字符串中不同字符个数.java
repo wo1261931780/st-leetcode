@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220413;
+package wo1261931780.stleetcode.practice.deke.a20220413;
 
 import lombok.extern.slf4j.Slf4j;
 

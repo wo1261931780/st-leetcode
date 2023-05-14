@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220304;
+package wo1261931780.stleetcode.practice.deke.a20220304;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
  * Package:leetcode.eee002deke_code.aaa003_20220304
  * User:  wo1261931780@gmail.com
  * Time:  2022-03-11-47  星期五
+ *
  * @author junw
  */
 @Slf4j
@@ -17,7 +18,7 @@ public class A010递归计算兔子数量 {
 		// Scanner x = new Scanner(System.in);
 		log.info(String.valueOf(show(9)));
 	}
-
+	
 	public static int show(int x) {
 		if (x == 1 || x == 2) {
 			return 1;

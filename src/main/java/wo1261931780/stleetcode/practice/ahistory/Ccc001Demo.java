@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.ahistory;
+package wo1261931780.stleetcode.practice.ahistory;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -48,7 +48,7 @@ public class Ccc001Demo {
 		}
 		rank(x);
 	}
-
+	
 	public static void rank(int[] x) {
 		for (int i = 0, max; i < x.length - 1; i++) {
 			for (int i1 = 0; i1 < x.length - i - 1; i1++) {

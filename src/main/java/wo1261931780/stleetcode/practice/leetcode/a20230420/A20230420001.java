@@ -50,8 +50,8 @@ public class A20230420001 {
 		Scanner input = new Scanner(System.in);
 		String s = input.nextLine();
 		int max = 0;
-		/**
-		 *双指针遍历找到最长子串
+		/*
+		 双指针遍历找到最长子串
 		 */
 		for (int i = 0; i < s.length(); i++) {
 			for (int j = s.length(); j > i; j--) {
@@ -68,6 +68,6 @@ public class A20230420001 {
 	 * 判断一个字符串是否是回文字符串的方法
 	 */
 	public static boolean isPalindromeString(String s) {
-		return s.equals(new StringBuilder(s).reverse().toString());
+		return s.contentEquals(new StringBuilder(s).reverse());
 	}
 }

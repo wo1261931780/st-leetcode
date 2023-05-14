@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220409;
+package wo1261931780.stleetcode.practice.deke.a20220409;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -24,7 +24,7 @@ import java.util.Scanner;
 @Slf4j
 public class A026进制转换 {
 	public static final Map<String, String> XX = new HashMap<>();
-
+	
 	static {
 		XX.put("0", "0");
 		XX.put("1", "1");
@@ -43,7 +43,7 @@ public class A026进制转换 {
 		XX.put("E", "14");
 		XX.put("F", "15");
 	}
-
+	
 	public static void main(String[] args) {
 		Scanner x = new Scanner(System.in);
 		String demoNum = x.nextLine();
@@ -56,7 +56,7 @@ public class A026进制转换 {
 		trans3(res);
 		log.info(res);
 	}
-
+	
 	public static String trans(String demo, Map<String, String> x) {
 		// Set<Map.Entry<String, String>> show = x.entrySet();
 		for (String s : x.keySet()) {
@@ -66,7 +66,7 @@ public class A026进制转换 {
 		}
 		return "";
 	}
-
+	
 	public static void trans3(String result) {
 		int result2 = 0;
 		for (int i = 0, j = result.length() - 1; i < result.length(); i++, j--) {
@@ -79,12 +79,12 @@ public class A026进制转换 {
 		}
 		log.info(String.valueOf(result2));
 	}
-
+	
 	public static String trans2(String num) {
 		// int total_lenth = num.length();
 		String result;
 		String result2;
-
+		
 		int input = Integer.parseInt(num);
 		StringBuilder resultBuilder1 = new StringBuilder();
 		while (input >= 1) {

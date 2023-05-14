@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220409;
+package wo1261931780.stleetcode.practice.deke.a20220409;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -29,7 +29,7 @@ public class A025测试 {
 		}
 		// 其实这里有个问题，如果我输出两组数据，n1和n2，那么我的测试结果，到底是n1和n2合并到一组输出，还是分开输出两组？
 	}
-
+	
 	public static void show() {
 		Scanner x1 = new Scanner(System.in);
 		int showNum = x1.nextInt();

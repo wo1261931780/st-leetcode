@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220409;
+package wo1261931780.stleetcode.practice.deke.a20220409;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -24,10 +24,10 @@ import java.util.Scanner;
 public class A027分解质因子 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-
+		
 		long num = scanner.nextLong();
 		long k = (long) Math.sqrt(num);
-
+		
 		for (long i = 2; i <= k; ++i) {
 			while (num % i == 0) {
 				log.info(i + " ");
@@ -36,7 +36,7 @@ public class A027分解质因子 {
 		}
 		log.info(num == 1 ? "" : num + " ");
 	}
-
+	
 	// 2022年4月9日21:13:58
 	// 其实问题是没有解决的，以下的代码，面对一些特殊样例无法通过
 	// 比如一些特别大的质数，本身就没有质因子
@@ -95,5 +95,5 @@ public class A027分解质因子 {
 	    // log.info(A021测试时间Api == 1 ? "" : A021测试时间Api + "");
 	}
 	 */
-
+	
 }

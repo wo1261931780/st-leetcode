@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.leetcode.a20230218;
+package wo1261931780.stleetcode.practice.leetcode.a20230218;
 
 /**
  * Created by Intellij IDEA.
@@ -31,18 +31,15 @@ public class A048回文数 {
 输出：false
 解释：从右向左读, 为 01 。因此它不是一个回文数。
 	 */
-
+	
 	public static void main(String[] args) {
 		A048回文数 demo = new A048回文数();
 		System.out.println(demo.isPalindrome(123));
 	}
-
+	
 	public boolean isPalindrome(int x) {
-		String demo = x + "";
+		String demo = String.valueOf(x);
 		String builder = new StringBuilder(demo).reverse().toString();
-		if (builder.equals(demo)) {
-			return true;
-		}
-		return false;
+		return builder.equals(demo);
 	}
 }

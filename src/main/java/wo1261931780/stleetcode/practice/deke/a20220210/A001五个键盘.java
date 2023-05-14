@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220210;
+package wo1261931780.stleetcode.practice.deke.a20220210;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -49,18 +49,18 @@ public class A001五个键盘 {
             2
 
      */
-
+	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		String ops = in.nextLine();
 		in.close();
 		String[] list = ops.split(" ");
-
+		
 		StringBuilder builder = new StringBuilder();
-
+		
 		String choose = "";
 		String tab = "";
-
+		
 		for (String op : list) {
 			switch (op) {
 				case "1" -> {
@@ -96,14 +96,14 @@ public class A001五个键盘 {
 					return;
 				}
 			}
-
+			
 			log.info(String.valueOf(builder));
 			log.info(String.valueOf(builder.length()));
 		}
-
+		
 		log.info(String.valueOf(builder.length()));
 	}
-
+	
 	private static String reset(StringBuilder builder, String choose) {
 		if (!choose.isEmpty()) {
 			builder.replace(0, choose.length(), "");

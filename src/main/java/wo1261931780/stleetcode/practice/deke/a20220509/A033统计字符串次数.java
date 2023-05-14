@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220509;
+package wo1261931780.stleetcode.practice.deke.a20220509;
 /*
     需求：
         键盘录入一个字符串，要求统计字符串中每个字符串出现的次数。
@@ -20,6 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
+
 /**
  * @author junw
  */
@@ -58,6 +59,6 @@ public class A033统计字符串次数 {
 			x6.append(i).append("(").append(x.get(i)).append(")").append("-");
 		}
 		log.info(String.valueOf(x6));
-
+		
 	}
 }

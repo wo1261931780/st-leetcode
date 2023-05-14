@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.leetcode.a20230217;
+package wo1261931780.stleetcode.practice.leetcode.a20230217;
 
 /**
  * Created by Intellij IDEA.
@@ -32,12 +32,12 @@ public class A047两个括号 {
 输入：s = "(]"
 输出：false
 	 */
-
+	
 	public static void main(String[] args) {
 		A047两个括号 demo = new A047两个括号();
 		System.out.println(demo.isValid("){"));
 	}
-
+	
 	public boolean isValid(String s) {
 		// 首先，字符串一定是偶数的长度
 		// 我们只需要判断右括号是否是对应的即可
@@ -47,7 +47,7 @@ public class A047两个括号 {
 		}
 		while (s.contains("()") || s.contains("[]") || s.contains("{}")) {
 			s = s.replace("()", "").replace("[]", "").replace("{}", "");
-			if (s.equals("")) {
+			if ("".equals(s)) {
 				return true;
 			}
 		}
@@ -63,7 +63,7 @@ public class A047两个括号 {
 		}
 		return true;
 	}
-
+	
 	public boolean demo(String charAt, String charAt2) {
 		switch (charAt) {
 			case "(":

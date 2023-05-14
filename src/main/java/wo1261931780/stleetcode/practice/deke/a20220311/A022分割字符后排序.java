@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220311;
+package wo1261931780.stleetcode.practice.deke.a20220311;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -21,12 +21,12 @@ public class A022分割字符后排序 {
 		show(x1);
 		StringBuilder xBuilder = new StringBuilder(x);
 		for (int i = 0; i < x1.size(); i++) {
-			xBuilder.append(i == x1.size() - 1 ? x1.get(i) + "" : x1.get(i) + " ");
+			xBuilder.append(i == x1.size() - 1 ? String.valueOf(x1.get(i)) : x1.get(i) + " ");
 		}
 		x = xBuilder.toString();
 		log.info(x);
 	}
-
+	
 	public static void show(List<Integer> x) {
 		int mid;
 		for (int i = 0; i < x.size() - 1; i++) {

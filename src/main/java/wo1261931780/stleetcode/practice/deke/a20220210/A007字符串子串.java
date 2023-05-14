@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220210;
+package wo1261931780.stleetcode.practice.deke.a20220210;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -12,6 +12,7 @@ import java.util.Scanner;
  * Date: 2021/10/27
  * Time: 17:11
  * Description:
+ *
  * @author junw
  */
 @Slf4j
@@ -50,16 +51,16 @@ public class A007字符串子串 {
 
     字符串区分大小写
    */
-
+	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		String str = in.nextLine();
 		in.close();
-
+		
 		char[] chars = str.toCharArray();
-
+		
 		int maxLen = 0;
-
+		
 		for (int i = 0; i < chars.length; i++) {
 			int index = i;
 			int len = 1;
@@ -71,9 +72,9 @@ public class A007字符串子串 {
 				maxLen = len;
 			}
 		}
-
+		
 		log.info(String.valueOf(maxLen));
-
+		
 	}
-
+	
 }

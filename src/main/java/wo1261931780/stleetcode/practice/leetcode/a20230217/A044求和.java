@@ -1,10 +1,11 @@
-package com.stleetcode.github.io.junw.practice.leetcode.a20230217;
+package wo1261931780.stleetcode.practice.leetcode.a20230217;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Random;
+
 /**
  * @author junw
  */
@@ -35,9 +36,9 @@ public class A044求和 {
 		}
 		log.info(String.valueOf(x1));
 	}
-
+	
 	public static void sub(int[] x, Random x1) {
-
+		
 		for (int i = 0; i < x.length; i++) {
 			int x2 = x1.nextInt(1000);
 			x[i] = x2;

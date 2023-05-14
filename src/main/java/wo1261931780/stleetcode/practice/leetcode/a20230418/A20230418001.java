@@ -39,10 +39,9 @@ public class A20230418001 {
 		int i = random;
 		int j = random;
 		while (true) {
-			OUT:
 			for (j = 2; j < i; j++) {
 				if (i % j == 0) {
-					break OUT;
+					break;
 				}
 			}
 			if (j == i) {

@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.ahistory;
+package wo1261931780.stleetcode.practice.ahistory;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -41,7 +41,7 @@ public class Ccc20220218 {
 			show(x1);
 		}
 	}
-
+	
 	public static void show(String x1) {
 		int x2 = x1.length();
 		if (x2 <= 8 && x2 > 0) {

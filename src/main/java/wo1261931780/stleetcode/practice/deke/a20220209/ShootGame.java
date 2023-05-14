@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220209;
+package wo1261931780.stleetcode.practice.deke.a20220209;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
  * Date: 2022年2月9日19:42:13
  * Time: 11:18
  * Description: 100%
+ *
  * @author junw
  */
 @Slf4j
@@ -65,16 +66,16 @@ public class ShootGame {
         由于3号和5号成绩相等  且id 5>3
         所以输出5,3,7,4
    */
-
+	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int n = Integer.parseInt(in.nextLine());
 		List<Integer> ids = toIntList(in.nextLine());
 		List<Integer> scores = toIntList(in.nextLine());
 		in.close();
-
+		
 		HashMap<Integer, List<Integer>> map = new HashMap<>(20);
-
+		
 		for (int i = 0; i < n; i++) {
 			Integer id = ids.get(i);
 			Integer score = scores.get(i);
@@ -83,7 +84,7 @@ public class ShootGame {
 			map.put(id, list);
 		}
 		StringBuilder builder = new StringBuilder();
-
+		
 		map.entrySet()
 				.stream()
 				.filter(x -> x.getValue().size() >= 3)
@@ -98,17 +99,17 @@ public class ShootGame {
 				})
 				.map(Map.Entry::getKey)
 				.forEach(x -> builder.append(x).append(","));
-
+		
 		log.info(builder.substring(0, builder.length() - 1));
-
+		
 	}
-
+	
 	private static List<Integer> toIntList(String str) {
 		return Arrays.stream(str.split(","))
 				       .map(Integer::parseInt)
 				       .collect(Collectors.toList());
 	}
-
+	
 	private static Integer sumT3(List<Integer> list) {
 		list.sort(Integer::compareTo);
 		int sum = 0;

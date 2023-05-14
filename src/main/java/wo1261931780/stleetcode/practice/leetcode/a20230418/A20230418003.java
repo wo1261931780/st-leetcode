@@ -1,11 +1,7 @@
 package wo1261931780.stleetcode.practice.leetcode.a20230418;
 
-import org.apache.commons.lang3.time.DateParser;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.TemporalAccessor;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
@@ -73,7 +69,7 @@ public class A20230418003 {
 	/**
 	 * copilot 给出的代码
 	 */
-	public static void sampleCode2(){
+	public static void sampleCode2() {
 		Scanner in = new Scanner(System.in);
 		String[] s = in.nextLine().split(" ");
 		int year = Integer.parseInt(s[0]);

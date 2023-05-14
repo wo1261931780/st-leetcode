@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.leetcode.a20230218;
+package wo1261931780.stleetcode.practice.leetcode.a20230218;
 
 /**
  * Created by Intellij IDEA.

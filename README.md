@@ -21,21 +21,22 @@
     <a href="README.md">English</a>
     ·
     <a href="README_cn.md">简体中文</a>    
-<p/>
+<p></p>
 
 ![Alt](https://repobeats.axiom.co/api/embed/d80955950a9cc802a9f36426bc3759d8119d5820.svg "Repobeats analytics image")
 </div>
 
 <p>
 
-[//]: # (st-leetcode.github.io) 
+[//]: # (st-leetcode.github.io)
 <img  align='right' src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwo1261931780%2Fst-leetcode.github.io.svg?type=large">
 </p>
 
 ## Features
 
 - [x] Using the latest jdk17 and spring3
-- [x] Currently may be based on time as subcontracting, later the number of more may be in accordance with the type of questions
+- [x] Currently may be based on time as subcontracting, later the number of more may be in accordance with the type of
+  questions
 - [x] No advertising, welcome to the big guys hanging
 - [ ] ~~The rest of the content has not yet been thought of~~
 

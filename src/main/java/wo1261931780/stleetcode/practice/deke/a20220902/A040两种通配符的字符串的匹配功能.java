@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220902;
+package wo1261931780.stleetcode.practice.deke.a20220902;
 
 // 应用计算机处理日常事务或者是编写程序的时候，经常需要用到带有通配符的字符串匹配。
 // 比如：linux命令行下输入，ls *.txt 就是列出当前目录下所有的结尾是.txt的文件。
@@ -14,7 +14,7 @@ public class A040两种通配符的字符串的匹配功能 {
 	// 输入参数: @pRule, 以'\0'结束的字符串，表示规则;
 	// @pStr, 以'\0'结束的待匹配的字符串;
 	// 返回值:true:匹配成功; false: 匹配失败
-
+	
 	public static boolean isRegularMatching(String text, String number) {
 		int text_length = text.length();
 		int number_length = number.length();

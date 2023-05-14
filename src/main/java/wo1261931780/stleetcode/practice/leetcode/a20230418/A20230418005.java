@@ -3,7 +3,6 @@ package wo1261931780.stleetcode.practice.leetcode.a20230418;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
-import java.util.TreeSet;
 
 /**
  * Created by Intellij IDEA.
@@ -75,6 +74,7 @@ public class A20230418005 {
 		for (String character : treeSet) {
 			if (nextLine1.contains(character)) {
 				flag = true;
+				break;
 			}
 		}
 		System.out.println(flag);

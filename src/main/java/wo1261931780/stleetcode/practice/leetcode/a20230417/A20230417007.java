@@ -1,7 +1,5 @@
 package wo1261931780.stleetcode.practice.leetcode.a20230417;
 
-import java.util.Scanner;
-
 /**
  * Created by Intellij IDEA.
  * Project:st-leetcode
@@ -46,7 +44,6 @@ public class A20230417007 {
 		// String nextLine = scanner.nextLine();
 		// String regex = "(?=[+\\-*/()])|(?<=[+\\-*/()])";
 		// String[] split = nextLine.split(regex);
-		
 		
 		
 	}

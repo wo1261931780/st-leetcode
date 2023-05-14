@@ -1,6 +1,5 @@
 package wo1261931780.stleetcode.practice.leetcode.a20230417;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**

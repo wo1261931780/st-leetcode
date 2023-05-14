@@ -1,8 +1,9 @@
-package com.stleetcode.github.io.junw.practice.ahistory;
+package wo1261931780.stleetcode.practice.ahistory;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Scanner;
+
 /**
  * @author junw
  */
@@ -16,7 +17,7 @@ public class DemoLeetcode {
 			run(typeNum);
 		}
 	}
-
+	
 	public static void run(int typeNum) {
 		int num = 0;
 		for (int i = 1; i <= typeNum; i++) {
@@ -27,7 +28,7 @@ public class DemoLeetcode {
 		}
 		log.info(String.valueOf(num));
 	}
-
+	
 	public static int testNum(int x, int num) {
 		// int x = 28;
 		int j = 0;

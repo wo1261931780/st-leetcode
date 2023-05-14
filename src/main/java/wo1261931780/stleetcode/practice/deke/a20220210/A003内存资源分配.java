@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220210;
+package wo1261931780.stleetcode.practice.deke.a20220210;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -15,6 +15,7 @@ import java.util.TreeMap;
  * Date: 2021/3/12
  * Time: 16:21
  * Description:
+ *
  * @author junw
  */
 @Slf4j
@@ -80,9 +81,9 @@ public class A003内存资源分配 {
 		List<Integer> list = Arrays.stream(in.nextLine().split(","))
 				                     .map(Integer::parseInt).toList();
 		in.close();
-
+		
 		StringBuilder builder = new StringBuilder();
-
+		
 		for (Integer size : list) {
 			boolean flag = false;
 			for (Integer k : pool.keySet()) {
@@ -98,7 +99,7 @@ public class A003内存资源分配 {
 				builder.append("false,");
 			}
 		}
-
+		
 		log.info(builder.substring(0, builder.length() - 1));
 	}
 }

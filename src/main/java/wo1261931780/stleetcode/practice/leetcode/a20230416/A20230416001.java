@@ -54,7 +54,7 @@ public class A20230416001 {
 		String nextLine = scanner.nextLine();
 		int nextLine2 = scanner.nextInt();
 		log.info(nextLine);
-		log.info(nextLine2 + "");
+		log.info(String.valueOf(nextLine2));
 		log.info(FINAL_SPLIT);
 		log.info(nextLine.substring(0, nextLine2));
 		System.out.println();

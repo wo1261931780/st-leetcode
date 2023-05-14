@@ -1,9 +1,10 @@
-package com.stleetcode.github.io.junw.practice.leetcode.a20230217;
+package wo1261931780.stleetcode.practice.leetcode.a20230217;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
+
 /**
  * @author junw
  */

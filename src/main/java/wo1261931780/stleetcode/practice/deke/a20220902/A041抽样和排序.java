@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220902;
+package wo1261931780.stleetcode.practice.deke.a20220902;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -19,7 +19,7 @@ public class A041抽样和排序 {
 	注：测试用例保证输入参数的正确性，答题者无需验证。测试用例不止一组。
 	当没有新的输入时，说明输入结束。
     */
-
+	
 	public static void main(String[] args) {
 		// Random x = new Random();
 		SecureRandom x = new SecureRandom();

@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.deke.a20220210;
+package wo1261931780.stleetcode.practice.deke.a20220210;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -15,6 +15,7 @@ import java.util.Scanner;
  * Date: 2021/10/27
  * Time: 17:29
  * Description:
+ *
  * @author junw
  */
 @Slf4j
@@ -68,22 +69,22 @@ public class A008身高相近的小朋友 {
         依此类推
 
    */
-
+	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int n = Integer.parseInt(in.nextLine());
-
+		
 		if (n == 0) {
 			log.info(String.valueOf(0));
 			return;
 		}
 		String[] strs = in.nextLine().split(" ");
-
+		
 		List<Integer> height = Arrays.stream(strs)
 				                       .map(Integer::parseInt).toList();
-
+		
 		LinkedList<Integer> res = new LinkedList<>();
-
+		
 		for (int i = 0; i < height.size(); i++) {
 			int pos = 0;
 			for (int j = i + 1; j < height.size(); j++) {
@@ -94,13 +95,13 @@ public class A008身高相近的小朋友 {
 			}
 			res.add(pos);
 		}
-
+		
 		StringBuilder builder = new StringBuilder();
 		res.forEach(x -> builder.append(x).append(" "));
 		if (builder.length() > 1) {
 			String substring = builder.substring(0, builder.length() - 1);
 			log.info(substring);
 		}
-
+		
 	}
 }

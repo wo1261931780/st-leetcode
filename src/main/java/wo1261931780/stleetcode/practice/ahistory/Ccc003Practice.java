@@ -1,4 +1,4 @@
-package com.stleetcode.github.io.junw.practice.ahistory;
+package wo1261931780.stleetcode.practice.ahistory;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,11 +16,11 @@ public class Ccc003Practice {
 			show();
 		}
 	}
-
+	
 	public static void show() {
 		int jw = 0;
 		int cash = 100;
-
+		
 		for (int jwSum = cash / 5; jw <= jwSum; jw++) {
 			int jm = 0;
 			int cashNow = cash - 5 * jw;
@@ -39,9 +39,9 @@ public class Ccc003Practice {
 			}
 		}
 	}
-
+	
 	// 2022年2月9日21:59:06，正确思路：
-
+	
 	public class Main {
 		public static void main(String[] args) {
 			Scanner sc = new Scanner(System.in);
@@ -49,8 +49,8 @@ public class Ccc003Practice {
 				f(sc.nextInt());
 			}
 		}
-
-
+		
+		
 		public static void f(int num) {
 // 5x+3y+z/3=100;
 // x+y+z=100;
@@ -67,6 +67,6 @@ public class Ccc003Practice {
 			}
 		}
 	}
-
-
+	
+	
 }
