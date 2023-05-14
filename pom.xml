@@ -30,13 +30,15 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
+            <version>3.0.4</version>
+        </dependency>
 		<!--spring网络WEB-->
 		<!--使用Spring MVC构建Web，包括RESTful，应用程序。使用Apache Tomcat作为默认的嵌入式容器。-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<!--<scope>test</scope>-->
+            <version>3.0.4</version>
+            <!--<scope>test</scope>-->
 			<!--上面的scope表示作用范围-->
 			<!--在没有说明的情况下，scope默认就是compile-->
 			<!--如果我把mysql这些数据库驱动jar包设置为runtime-->
@@ -52,7 +54,8 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
+            <version>3.0.4</version>
+            <scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
 		<!--Spring配置处理器 开发者工具-->
@@ -60,14 +63,16 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
-			<optional>true</optional>
+            <version>3.0.4</version>
+            <optional>true</optional>
 			<!--添加以后，可以避免自动装配报错-->
 		</dependency>
 		<!--使用Spring Boot的Actuator的入门课程，它提供了生产准备的功能，帮助你监控和管理你的应用程序。-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
+            <version>3.0.4</version>
+        </dependency>
 		<!--=============================================================================================-->
 		<!--DEVELOPER_TOOLS-->
 		<!--=============================================================================================-->
@@ -91,7 +96,8 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
-		</dependency>
+            <version>3.0.4</version>
+        </dependency>
 
 
 
@@ -136,7 +142,8 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+            <version>3.0.4</version>
+            <scope>test</scope>
 		</dependency>
 
 		<!--Spring Test支持用JUnit或TestNG对Spring组件进行单元测试和集成测试。-->
@@ -144,7 +151,8 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-		</dependency>
+            <version>6.0.6</version>
+        </dependency>
 
 
 		<!--=============================================================================================-->
@@ -155,7 +163,8 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+            <version>3.0.4</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
