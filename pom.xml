@@ -96,7 +96,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
-            <version>3.0.4</version>
+            <version>3.0.6</version>
         </dependency>
 
 
