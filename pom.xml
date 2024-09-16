@@ -30,7 +30,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-            <version>3.3.2</version>
+            <version>3.3.3</version>
         </dependency>
 		<!--spring网络WEB-->
 		<!--使用Spring MVC构建Web，包括RESTful，应用程序。使用Apache Tomcat作为默认的嵌入式容器。-->
@@ -54,7 +54,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-            <version>3.3.2</version>
+            <version>3.3.3</version>
             <scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
@@ -63,7 +63,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
-            <version>3.3.2</version>
+            <version>3.3.3</version>
             <optional>true</optional>
 			<!--添加以后，可以避免自动装配报错-->
 		</dependency>
